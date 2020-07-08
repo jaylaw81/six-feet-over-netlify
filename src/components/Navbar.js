@@ -2,6 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import styled from 'styled-components'
+
+const NavBar = styled.nav`
+	font-size: 30px;
+`
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -34,7 +40,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
+      <NavBar
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
@@ -90,7 +96,7 @@ const Navbar = class extends React.Component {
             </div>
           </div>
         </div>
-      </nav>
+      </NavBar>
     )
   }
 }
