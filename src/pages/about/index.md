@@ -3,17 +3,17 @@ templateKey: 'about-page'
 path: /about
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Our Vision
+Six Feet Over envisions a world free of suicide loss – one where people from diverse backgrounds have access to the resources and tools they need to live peacefully and support their family and peers around issues of mental health.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+### Our Goals
+To make our vision a reality, Six Feet Over strategically positions itself within the community and defines 4 goals. These goals will help us create profound change at the grassroots, familial, and community levels throughout Michigan.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+### Our Founder’s Story
+Katie Hardy is the Founder and CEO of Six Feet Over. Katie founded the Detroit-based nonprofit in 2013 to serve the survivors of suicide loss in her community, aiming to provide financial assistance for costs associated such as funerals, clean up and memorials, as well as to provide outreach, awareness, and resources to her community. Six Feet Over, and its program Suck It! Suicide, are now focused on helping all survivors, with a special interest in the non-mainstream communities of music, art and youth demographics.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+After surviving 8 losses by suicide, beginning with the loss of her mother in 2003, Katie found that support groups and functions catered too much to the norms of society, avoiding and minimizing the needs of authenticity and honesty in the grieving process. She saw a profound need within her community for information, conversation, and postvention after loss.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Since then, Katie has spoken at and participated in facilitating many events including Survivors’ Day conferences, school and community events, memorials, and has continued to tell her story to both public and private companies, providing a better understanding and more insight into the life of a survivor.
+
+Katie was recently nominated and voted in to serve on the Consumer/Survivor Subcommittee of the National Suicide Prevention Lifeline, and she has been featured in several articles and blogs including Hour Detroit, The Oakland Press, BLocal Detroit, and Hip In Detroit, as well as mentions in The Metro Times and discussions in the podcast A History of the Ridiculous.
