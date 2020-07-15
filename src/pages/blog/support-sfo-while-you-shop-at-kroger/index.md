@@ -2,6 +2,7 @@
 title: "Support SFO While You Shop at Kroger"
 date: "2018-10-11"
 templateKey: "blog-post"
+tags:  - fundraising
 coverImage: "SIS-Logo-Navy-HEX.png"
 ---
 

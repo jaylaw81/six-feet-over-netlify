@@ -2,7 +2,7 @@
 title: "Oakland Press Interviews Founder Katie Hardy"
 date: "2015-12-17"
 templateKey: "blog-post"
----
+tags:---
 
 > "Our goals are to help... so suicides are reduced, stigma is shattered and healing and communities are priorities.”
 

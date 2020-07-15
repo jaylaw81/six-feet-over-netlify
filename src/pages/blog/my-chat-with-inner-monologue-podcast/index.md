@@ -2,6 +2,11 @@
 title: "My Chat With Inner Monologue Podcast"
 date: "2017-09-29"
 templateKey: "blog-post"
+tags:  - interview
+  - kate
+  - mental-health
+  - podcast
+  - suicide-prevention
 coverImage: "kate.jpg"
 ---
 

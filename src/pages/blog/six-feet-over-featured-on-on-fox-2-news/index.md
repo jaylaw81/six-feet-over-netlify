@@ -2,6 +2,9 @@
 title: "Six Feet Over Featured On On FOX 2 News"
 date: "2019-09-09"
 templateKey: "blog-post"
+tags:  - interview
+  - mental-health
+  - suicide-prevention
 coverImage: "2eb22992b6df449b8aec563f6ffa9747.jpeg"
 ---
 

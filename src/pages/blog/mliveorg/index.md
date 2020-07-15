@@ -2,7 +2,7 @@
 title: "\"Suck It! Suicide\" Featured on MLive.org"
 date: "2016-04-08"
 templateKey: "blog-post"
----
+tags:---
 
 \[caption id="attachment\_7531" align="alignleft" width="260"\]![Suck It! Suicide | Benefit Poster](images/suck_it_suicide_poster-200x300.jpg) The Annual Comedy Showcase Fundraiser Poster\[/caption\]
 

@@ -2,7 +2,7 @@
 title: "Hip In Detroit Interviews Founder, Katie Hardy"
 date: "2014-09-11"
 templateKey: "blog-post"
----
+tags:---
 
 > "As an 8 time survivor of suicide loss and an advocate, I think it's important for everyone to know the warning signs.
 
