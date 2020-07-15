@@ -1,6 +1,7 @@
 ---
 title: "100 Faithful Friends Donates $10K to Six Feet Over"
 date: "2019-02-05"
+templateKey: "blog-post"
 coverImage: "5c58e54cd732d.image_.jpg"
 ---
 

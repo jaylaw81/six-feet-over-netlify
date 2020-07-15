@@ -1,6 +1,7 @@
 ---
 title: "Six Feet Over Adds New Board Members"
 date: "2018-09-24"
+templateKey: "blog-post"
 coverImage: "Ian-2-e1537238323187.jpg"
 ---
 

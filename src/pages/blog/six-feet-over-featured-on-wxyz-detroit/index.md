@@ -1,6 +1,7 @@
 ---
 title: "Six Feet Over Featured on WXYZ Detroit"
 date: "2018-06-12"
+templateKey: "blog-post"
 coverImage: "poster_9ef0721e7bfb42f3b5caf98483ba02a6_89655053_ver1.0_640_480.jpg"
 ---
 

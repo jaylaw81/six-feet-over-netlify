@@ -1,6 +1,7 @@
 ---
 title: "Six Feet Over Presents at Suicidology Conference"
 date: "2017-05-03"
+templateKey: "blog-post"
 coverImage: "Screen-Shot-2017-07-16-at-5.05.54-PM.png"
 ---
 

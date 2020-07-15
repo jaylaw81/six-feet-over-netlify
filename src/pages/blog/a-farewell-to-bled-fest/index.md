@@ -1,6 +1,7 @@
 ---
 title: "A Farewell to Bled Fest"
 date: "2019-05-30"
+templateKey: "blog-post"
 coverImage: "bled-fest.jpg"
 ---
 

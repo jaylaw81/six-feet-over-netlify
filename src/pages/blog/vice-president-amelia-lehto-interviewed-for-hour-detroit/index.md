@@ -1,6 +1,7 @@
 ---
 title: "Vice President Amelia Lehto Interviewed for Hour Detroit"
 date: "2015-04-30"
+templateKey: "blog-post"
 ---
 
 > "This is a resource that is sorely needed for suicide prevention."

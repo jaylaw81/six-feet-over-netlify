@@ -1,6 +1,7 @@
 ---
 title: "Six Feet Over Featured in Seen Magazine"
 date: "2019-04-08"
+templateKey: "blog-post"
 coverImage: "Six-Feet-Over.jpg"
 ---
 
