@@ -19,28 +19,28 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-			- {label: "Title", name: "title", widget: "string"}
-			- {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "firstName", "lastName"], valueField: "title"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "firstName", "lastName"], valueField: "title"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text", required: false}
       - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
       - {label: "Featured Image", name: "coverImage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-			- {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
 
-	- name: "authors"
-		label: "Authors"
-		folder: "src/authors"
-		create: true
-		slug: "{{slug}}"
-		fields:
-			- {label: "Layout", name: "layout", widget: "hidden", default: "author"}
-			- {label: "Full Name", name: "title", widget: "string"}
-			- {label: "First Name", name: "firstName", widget: "string"}
-			- {label: "Last Name", name: "lastName", widget: "string"}
-			- {label: "Position", name: "position", widget: "string"}
-			- {label: "Profile Picture", name: "profilePicture", widget: "image"}
-			- {label: "Email", name: "email", widget: "string"}
+  - name: "authors"
+    label: "Authors"
+    folder: "src/authors"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
+      - {label: "Full Name", name: "title", widget: "string"}
+      - {label: "First Name", name: "firstName", widget: "string"}
+      - {label: "Last Name", name: "lastName", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Profile Picture", name: "profilePicture", widget: "image"}
+      - {label: "Email", name: "email", widget: "string"}
 
   - name: "pages"
     label: "Pages"
