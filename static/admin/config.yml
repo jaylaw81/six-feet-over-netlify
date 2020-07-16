@@ -37,10 +37,10 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
       - {label: "Full Name", name: "title", widget: "string"}
       - {label: "First Name", name: "firstName", widget: "string"}
-      - {label: "Last Name", name: "lastName", widget: "string"}
-      - {label: "Position", name: "position", widget: "string"}
-      - {label: "Profile Picture", name: "profilePicture", widget: "image"}
-      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Last Name", name: "lastName", widget: "string", required: false}
+      - {label: "Position", name: "position", widget: "string", required: false}
+      - {label: "Profile Picture", name: "profilePicture", widget: "image", required: false}
+      - {label: "Email", name: "email", widget: "string", required: false}
 
   - name: "pages"
     label: "Pages"
