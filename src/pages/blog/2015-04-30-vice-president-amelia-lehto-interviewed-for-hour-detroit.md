@@ -1,8 +1,9 @@
 ---
-title: "Vice President Amelia Lehto Interviewed for Hour Detroit"
-date: "2015-04-30"
-templateKey: "blog-post"
-tags:
+templateKey: blog-post
+title: Vice President Amelia Lehto Interviewed for Hour Detroit
+date: 2015-04-30
+coverImage: /img/hour-detroit-logo-300x106.png
+tags: null
 ---
 
 "This is a resource that is sorely needed for suicide prevention."
