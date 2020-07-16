@@ -2,7 +2,9 @@
 title: "100 Faithful Friends Donates $10K to Six Feet Over"
 date: "2019-02-05"
 templateKey: "blog-post"
-tags:coverImage: "5c58e54cd732d.image_.jpg"
+tags:
+coverImage: "5c58e54cd732d.image_.jpg"
+featuredpost: false
 ---
 
 Every quarter, the Rochester Hills-based group 100 Faithful Friends votes on a local nonprofit to support. This quarter, the group selected Six Feet Over as the recipient of their $10,000 donation (each member donates $100).

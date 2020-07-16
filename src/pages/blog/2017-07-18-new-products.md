@@ -2,7 +2,9 @@
 title: "Six Feet Over & \"Suck It! Suicide\" Get All New Swag"
 date: "2017-07-18"
 templateKey: "blog-post"
-tags:coverImage: "Merch-sample.jpg"
+tags:
+coverImage: "Merch-sample.jpg"
+featuredpost: false
 ---
 
  

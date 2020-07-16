@@ -5,6 +5,7 @@ date: 2016-04-08
 coverImage: /img/suck_it_suicide_poster.jpg
 tags:
   - post
+featuredpost: false
 ---
 ![](/img/suck_it_suicide_poster-200x300.jpg)
 

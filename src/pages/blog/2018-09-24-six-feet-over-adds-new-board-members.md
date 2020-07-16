@@ -2,10 +2,12 @@
 title: "Six Feet Over Adds New Board Members"
 date: "2018-09-24"
 templateKey: "blog-post"
-tags:  - board-members
+tags:
+  - board-members
   - mental-health
   - suicide-prevention
 coverImage: "Ian-2-e1537238323187.jpg"
+featuredpost: false
 ---
 
 ![Six Feet Over | Ian Boyle](images/Ian-2-200x300.jpg)

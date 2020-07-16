@@ -7,7 +7,6 @@ class BlogRoll extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -19,11 +18,11 @@ class BlogRoll extends React.Component {
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
+                  {post.frontmatter.coverImage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: post.frontmatter.featuredimage,
+                          image: post.frontmatter.coverImage,
                           alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                         }}
                       />
@@ -86,7 +85,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                featuredimage {
+                coverImage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
                       ...GatsbyImageSharpFluid

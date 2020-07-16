@@ -2,7 +2,9 @@
 title: "Six Feet Over Featured in Seen Magazine"
 date: "2019-04-08"
 templateKey: "blog-post"
-tags:coverImage: "Six-Feet-Over.jpg"
+tags:
+coverImage: "Six-Feet-Over.jpg"
+featuredpost: false
 ---
 
 Did you know that life insurance companies have stipulations on the amount of money paid out if the cause of death is suicide? And that they might cap the amount paid off at 10% if the cause of death is deemed a suicide?

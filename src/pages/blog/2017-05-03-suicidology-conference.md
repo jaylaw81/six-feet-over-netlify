@@ -2,7 +2,9 @@
 title: "Six Feet Over Presents at Suicidology Conference"
 date: "2017-05-03"
 templateKey: "blog-post"
-tags:coverImage: "Screen-Shot-2017-07-16-at-5.05.54-PM.png"
+tags:
+coverImage: "Screen-Shot-2017-07-16-at-5.05.54-PM.png"
+featuredpost: false
 ---
 
 Six Feet Over's President and Vice President, Katie Hardy and Amelia Lehto, alongside friend of the organization Dese'rae L. Stage, presented at the Annual American Association of Suicidology Conference in Phoenix, AZ this year.
