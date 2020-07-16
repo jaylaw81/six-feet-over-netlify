@@ -1,4 +1,8 @@
 module.exports = {
+	mapping: {
+			"MarkdownRemark.fields.author": "MarkdownRemark",
+			"MarkdownRemark.fields.posts": "MarkdownRemark",
+	},
   siteMetadata: {
     title: 'Gatsby + Netlify CMS Starter',
     description:
