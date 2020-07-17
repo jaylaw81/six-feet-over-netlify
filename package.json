@@ -31,6 +31,9 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
+    "sass-extract": "^2.1.0",
+    "sass-extract-js": "^0.4.0",
+    "sass-extract-loader": "^1.1.0",
     "styled-components": "^5.1.1",
     "uuid": "^7.0.0"
   },
