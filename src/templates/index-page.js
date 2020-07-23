@@ -13,7 +13,9 @@ const HeroContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	background-color: ${props => props.theme.basicBlue};
-
+	background-image: url('/img/hero-homepage.jpg');
+	background-size: cover;
+	background-position-y: -389px;
 `
 
 const Hero = styled.div`
