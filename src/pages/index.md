@@ -2,16 +2,13 @@
 templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
-featured: Vice President Amelia Lehto Interviewed for Hour Detroit
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Suicide is a public health crisis
   description: and Michigan families need our help
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+  cta: Read more about this cause.
+  url: /blog/
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -47,6 +44,11 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+featured: Vice President Amelia Lehto Interviewed for Hour Detroit
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 main:
   heading: Great coffee with no compromises
   description: >
