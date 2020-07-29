@@ -57,8 +57,8 @@ action:
   title: Are you in need of assistance?
   description: Did you recently lose someone to suicide?
   paragraph: If you're in need of financial aid due to the unexpected costs of
-    losing a loved one, get in touch with us using the Financial Assistance
-    Application.
+    losing a loved one, get in touch with us using the [Financial Assistance
+    Application](https://docs.google.com/forms/d/14vzpeDxVVr954pUyUkt0ZVEp6aB3HIDsoPL7dbVQbSA/viewform?edit_requested=true).
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
