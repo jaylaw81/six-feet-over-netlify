@@ -53,6 +53,12 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
 featured: Vice President Amelia Lehto Interviewed for Hour Detroit
+action:
+  title: Are you in need of assistance?
+  description: Did you recently lose someone to suicide?
+  paragraph: If you're in need of financial aid due to the unexpected costs of
+    losing a loved one, get in touch with us using the Financial Assistance
+    Application.
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
