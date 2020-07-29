@@ -132,6 +132,7 @@ const ImpactArea = styled.div`
     margin: 0;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     li {
       list-style: none;
       color: white;
