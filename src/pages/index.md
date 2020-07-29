@@ -9,6 +9,11 @@ mainpitch:
   description: and Michigan families need our help
   cta: Read more about this cause.
   url: /blog/
+action:
+  title: Are you in need of assistance?
+  description: Did you
+  paragraph: >
+    paragraph text
 intro:
   blurbs:
     - image: /img/coffee.png
