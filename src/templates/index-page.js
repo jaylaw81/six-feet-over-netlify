@@ -128,7 +128,33 @@ const Content = styled.div`
 `
 
 const ImpactArea = styled.div`
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      list-style: none;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
 
+      h3 {
+        font-size: 72px;
+        font-family: ${props => props.theme.fontAccent};
+        font-weight: 100;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 28px;
+        font-family: ${props => props.theme.fontHeading};
+        font-weight: 100;
+        line-height: 36px;
+      }
+    }
+  }
 `
 
 const Paragraph = styled.p`
@@ -145,6 +171,11 @@ const Headline = styled.h3`
   color: white;
   font-size: 44px;
   line-height: 56px;
+
+  &.center {
+    margin: 50px auto 0 auto;
+    width: max-content;
+  }
 `
 
 export const IndexPageTemplate = ({
@@ -214,7 +245,7 @@ export const IndexPageTemplate = ({
         <Heading className={`rel light center`}>
           {impact.title}
         </Heading>
-        <Headline>
+        <Headline className={`center`}>
           {impact.description}
         </Headline>
         <ImpactArea>
