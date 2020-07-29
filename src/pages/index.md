@@ -9,6 +9,28 @@ mainpitch:
   description: and Michigan families need our help
   cta: Read more about this cause.
   url: /blog/
+action:
+  title: Are you in need of assistance?
+  description: Did you recently lose someone to suicide?
+  paragraph: If you're in need of financial aid due to the unexpected costs of
+    losing a loved one, get in touch with us using the [Financial Assistance
+    Application](https://docs.google.com/forms/d/14vzpeDxVVr954pUyUkt0ZVEp6aB3HIDsoPL7dbVQbSA/viewform?edit_requested=true).
+impact:
+  title: Our Impact
+  description: We invest in a better tomorrow for
+  stats:
+    - title: "1"
+      description: million resources shared
+    - title: "200"
+      description: michigan families helped
+    - title: 2,800
+      description: average financial assistance package
+    - title: "180"
+      description: annual events and concerts
+description: Kaldi is the ultimate spot for coffee lovers who want to learn
+  about their java’s origin and support the farmers that grew it. We take coffee
+  production, roasting and brewing seriously and we’re glad to pass that
+  knowledge to anyone.
 intro:
   blurbs:
     - title: Learn
@@ -20,28 +42,6 @@ intro:
     - title: Donate
       description: Help us raise money to make a big difference
 featured: Vice President Amelia Lehto Interviewed for Hour Detroit
-action:
-  title: Are you in need of assistance?
-  description: Did you recently lose someone to suicide?
-  paragraph: If you're in need of financial aid due to the unexpected costs of
-    losing a loved one, get in touch with us using the [Financial Assistance
-    Application](https://docs.google.com/forms/d/14vzpeDxVVr954pUyUkt0ZVEp6aB3HIDsoPL7dbVQbSA/viewform?edit_requested=true).
-impact:
-  title: Our Impact
-  description: description
-  stats:
-    - title: '1'
-      description: million resources shared
-    - title: '200'
-      description: michigan families helped
-    - title: '2,800'
-      description: average financial assistance package
-    - title: '180'
-      description: annual events and concerts
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
 main:
   heading: Great coffee with no compromises
   description: >
