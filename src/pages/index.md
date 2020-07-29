@@ -27,7 +27,7 @@ action:
     losing a loved one, get in touch with us using the [Financial Assistance
     Application](https://docs.google.com/forms/d/14vzpeDxVVr954pUyUkt0ZVEp6aB3HIDsoPL7dbVQbSA/viewform?edit_requested=true).
 impact:
-  title: Title
+  title: Our Impact
   description: description
   stats:
     - title: '1'
