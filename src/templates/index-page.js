@@ -8,6 +8,9 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 
 import styled from 'styled-components'
+import Index from '../pages/contact/index';
+import Testimonials from '../components/Testimonials';
+import { StaticQueryContext } from 'gatsby';
 
 const toHTML = value => remark()
                             .use(remarkHTML)
@@ -71,6 +74,7 @@ const HeroTitle = styled.div`
 
 const Action = styled.div`
   position: relative;
+
   ul {
     display: flex;
     justify-content: space-around;
@@ -120,6 +124,23 @@ const Heading = styled.div`
 const SectionDark = styled.div`
   background-color: #3c4557;
   padding: 86px 0;
+  position: relative;
+  &.impact {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/img/impact-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      z-Index: 1;
+      opacity: 0.1;
+    }
+
+  }
 `
 
 const Content = styled.div`
@@ -128,6 +149,7 @@ const Content = styled.div`
 `
 
 const ImpactArea = styled.div`
+
   ul {
     margin: 0;
     display: flex;
@@ -180,6 +202,10 @@ const Headline = styled.h3`
   }
 `
 
+const Families = styled.div`
+
+`
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -189,6 +215,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   action,
   impact,
+  testimonials,
   description,
   intro,
 }) => {
@@ -245,7 +272,7 @@ export const IndexPageTemplate = ({
         </ul>
       </Action>
 
-      <SectionDark>
+      <SectionDark className={`impact`}>
         <Content>
           <Heading className={`rel light center`}>
             {impact.title}
@@ -267,6 +294,10 @@ export const IndexPageTemplate = ({
           </ImpactArea>
         </Content>
       </SectionDark>
+
+      <Families>
+          <Testimonials testimonials={testimonials} />
+      </Families>
     </div>
   )
 }
@@ -278,6 +309,7 @@ IndexPageTemplate.propTypes = {
   impact: PropTypes.shape({
     stats: PropTypes.array,
   }),
+  testimonals: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -294,6 +326,7 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
         action={frontmatter.action}
         impact={frontmatter.impact}
+        testimonials={frontmatter.testimonials}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -334,6 +367,10 @@ export const pageQuery = graphql`
             title
             description
           }
+        }
+        testimonials {
+          quote
+          author
         }
         description
         intro {

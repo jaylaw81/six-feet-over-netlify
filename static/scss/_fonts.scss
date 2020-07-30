@@ -207,3 +207,15 @@
     font-style: normal;
 
 }
+
+@font-face {
+  font-family: 'poynter-bold';
+  src: url('../fonts/PoynterOSTextFour-Bold.eot');
+  src: url('../fonts/PoynterOSTextFour-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/PoynterOSTextFour-Bold.woff2') format('woff2'),
+       url('../fonts/PoynterOSTextFour-Bold.woff') format('woff'),
+       url('../fonts/PoynterOSTextFour-Bold.svg#poyntertextregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
