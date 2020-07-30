@@ -23,14 +23,13 @@ impact:
       description: years running
     - title: "32"
       description: families helped
-    - title: $2,600 / family
-      description: Some have been below $180, some over $4,500. Depends on the needs
-        of the family and the funding available
-    - title: Average 145 per year, Approx 994 over 74 years
+    - title: $2,600
+      description: Avg. Family Assistance
+    - title: "994"
       description: events & festivals
     - title: 6,323
       description: awareness products sold
-    - title: 80,000
+    - title: 80,000+
       description: resources distributed
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
