@@ -36,52 +36,51 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 testimonials:
-  - quote: "\"It's been almost two years since I got the worse phone call of my
-      life. I didn't know how to process suicide, and I didn't have any support
-      either. While looking on the internet for help I came across Six Feet Over
-      – they were such a blessing, it felt as if my Dad sent me their way. They
-      were supportive and helpful, and if it wasn't for them, I wouldn't have
-      been able to give my Dad a proper farewell. For that I'm forever
-      thankful.\""
+  - quote: It's been almost two years since I got the worse phone call of my life. I
+      didn't know how to process suicide, and I didn't have any support either.
+      While looking on the internet for help I came across Six Feet Over – they
+      were such a blessing, it felt as if my Dad sent me their way. They were
+      supportive and helpful, and if it wasn't for them, I wouldn't have been
+      able to give my Dad a proper farewell. For that I'm forever thankful.
     author: Christina, MI
-  - quote: “My husband’s death was absolutely devastating. I did not have anything
-      to help cover expenses and SFO was referred to me and while there were
-      many questions and some phone tag, I can’t say enough how they helped lift
-      some of the burden in such a horrible time.”
+  - quote: My husband’s death was absolutely devastating. I did not have anything to
+      help cover expenses and SFO was referred to me and while there were many
+      questions and some phone tag, I can’t say enough how they helped lift some
+      of the burden in such a horrible time.
     author: Bridgett, Wayne County MI
-  - quote: “Six Feet Over helped me during the process of getting back on track
-      after the loss of my husband. I didn’t know where to turn to or even what
-      the next steps in life would be. I was scared and lost because of the
+  - quote: Six Feet Over helped me during the process of getting back on track after
+      the loss of my husband. I didn’t know where to turn to or even what the
+      next steps in life would be. I was scared and lost because of the
       financial responsibilities my husband was leaving behind. Six Feet Over
       went above and beyond to help me and my family during my time in need. I
       appreciate everything Katie and her team did for me even when I just
       needed to vent. Having someone who been through exactly what I was going
-      through was a major help.”
+      through was a major help.
     author: Anonymous, Detroit MI
-  - quote: “In a time that my world imploded, and I was in a fog of grief, darkness
+  - quote: In a time that my world imploded, and I was in a fog of grief, darkness
       and fear, they were a beacon of light.  I had no idea how to manage the
       next minute of life, let alone things like funeral arrangements or how I
       was going to pay for any of it.  They were a literal lifeline for me.  I
       wish I had better words to describe the organization and the
       staff.  Incredibly kind, caring, generous, understanding, reassuring, and
       the help they gave me is immeasurable on all levels.  I am and will be
-      forever grateful for the help they gave me.”
+      forever grateful for the help they gave me.
     author: Denise, Livingston County MI
-  - quote: “Six feet Over was a blessing to us. They helped us get through the most
+  - quote: Six feet Over was a blessing to us. They helped us get through the most
       difficult, sad and stressful situation we have ever had to deal with.
       Something that seemed impossible was made so much more easy and we will
-      forever be grateful.”
+      forever be grateful.
     author: Amanda, Redford MI
-  - quote: “Six feet over has been very helpful, kind and sincere in helping me deal
+  - quote: Six feet over has been very helpful, kind and sincere in helping me deal
       with the death of my sister.  They offered to get counseling set up for
       the family. They kept in constant contact with me on the progress of the
       application.  They reached out to me to make sure the family was healing
       and to offer any services that they could set up.  My application was
       approved and this took a huge financial burden off of me for this
       unexpected expense of a funeral. I am very grateful to have had the
-      opportunity to be in touch with such a wonderful organization.”
+      opportunity to be in touch with such a wonderful organization.
     author: Josette, Clare County MI
-  - quote: “During the hardest times of my life Six Feet Over stepped up and helped
+  - quote: During the hardest times of my life Six Feet Over stepped up and helped
       me and my four children get closure. I never will forget how happy my kids
       were when they got a chance to wear they mom around their neck . We are
       forever grateful thanks to Six Feet Over my kids can talk to they mom when
@@ -89,9 +88,9 @@ testimonials:
       best thing I have ever experienced.  SFO helped me and children get my
       wife / their mom ashes  and that brought closure to 5 broken hearts. I
       tell people about Six Feet Over daily  and I will continue to, even when I
-      write my songs I speak about SFO”
+      write my songs I speak about SFO
     author: Terry, Saginaw MI
-  - quote: “The financial assistance helped me because I lost my job the day he died
+  - quote: The financial assistance helped me because I lost my job the day he died
       as well. I worked with him at our family business based on his sole
       services in mental health to others. It has taken me several months to get
       a teaching job as I had to get my recertification that had expired
@@ -99,7 +98,7 @@ testimonials:
       a month ago will be starting my job this fall. This assistance helped me
       in a time of emotional and financial survival mode. I had to sell my home
       as well as I could not afford it. This assistance gave me some comfort in
-      one less worry with paying for his cremations and I am forever grateful.”
+      one less worry with paying for his cremations and I am forever grateful.
     author: Jenny, MI
 intro:
   blurbs:
