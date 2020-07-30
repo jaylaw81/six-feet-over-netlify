@@ -35,6 +35,15 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
+testimonials:
+  - quote: "\"It's been almost two years since I got the worse phone call of my
+      life. I didn't know how to process suicide, and I didn't have any support
+      either. While looking on the internet for help I came across Six Feet Over
+      – they were such a blessing, it felt as if my Dad sent me their way. They
+      were supportive and helpful, and if it wasn't for them, I wouldn't have
+      been able to give my Dad a proper farewell. For that I'm forever
+      thankful.\""
+    author: Christina
 intro:
   blurbs:
     - title: Learn
