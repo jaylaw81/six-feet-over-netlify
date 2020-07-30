@@ -132,7 +132,7 @@ const ImpactArea = styled.div`
     margin: 0;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-wrap: wrap;
     li {
       list-style: none;
       color: white;
@@ -140,6 +140,7 @@ const ImpactArea = styled.div`
       justify-content: center;
       align-content: center;
       text-align: center;
+      margin: 0 30px 0 0;
 
       h3 {
         font-size: 72px;
@@ -158,7 +159,7 @@ const ImpactArea = styled.div`
   }
 `
 
-const Paragraph = styled.p`
+const Paragraph = styled.div`
   &.light {
     color: white;
     a {
@@ -190,81 +191,85 @@ export const IndexPageTemplate = ({
   impact,
   description,
   intro,
-}) => (
-  <div>
-    <HeroContainer
-      className="full-width-image margin-top-0"
-    >
-      <Hero>
-        <HeroTitle>The Issue</HeroTitle>
-        <HeroBox>
-          <HeroHeading>
-            {mainpitch.title}
-          </HeroHeading>
-          <HeroSubHeading>
-            {mainpitch.description}
-            <Link to={mainpitch.url}>{mainpitch.cta}</Link>
-          </HeroSubHeading>
-        </HeroBox>
-        <HeroTagLine>
-          #Help PREVENT SUICIDE
-        </HeroTagLine>
-      </Hero>
-    </HeroContainer>
+}) => {
 
-    <SectionDark>
-      <Content>
-        <Heading className={`rel light`}>
-          {action.title}
-        </Heading>
-        <Headline>
-          {action.description}
-        </Headline>
-        <Paragraph className="light" dangerouslySetInnerHTML={{__html: toHTML(action.paragraph)}} />
-      </Content>
-    </SectionDark>
+  const actionText = toHTML(action.paragraph)
+  return (
+    <div>
+      <HeroContainer
+        className="full-width-image margin-top-0"
+      >
+        <Hero>
+          <HeroTitle>The Issue</HeroTitle>
+          <HeroBox>
+            <HeroHeading>
+              {mainpitch.title}
+            </HeroHeading>
+            <HeroSubHeading>
+              {mainpitch.description}
+              <Link to={mainpitch.url}>{mainpitch.cta}</Link>
+            </HeroSubHeading>
+          </HeroBox>
+          <HeroTagLine>
+            #Help PREVENT SUICIDE
+          </HeroTagLine>
+        </Hero>
+      </HeroContainer>
 
-    <Action>
-      <Heading>Take Action</Heading>
-      <ul>
-        {intro.blurbs.map((item, key) => {
-          return(
-            <li key={key}>
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            </li>
-          )
-        })
-        }
-      </ul>
-    </Action>
+      <SectionDark>
+        <Content>
+          <Heading className={`rel light`}>
+            {action.title}
+          </Heading>
+          <Headline>
+            {action.description}
+          </Headline>
+          <Paragraph className="light" dangerouslySetInnerHTML={{__html: actionText }} />
+        </Content>
+      </SectionDark>
 
-    <SectionDark>
-      <Content>
-        <Heading className={`rel light center`}>
-          {impact.title}
-        </Heading>
-        <Headline className={`center`}>
-          {impact.description}
-        </Headline>
-        <ImpactArea>
-          <ul>
-          {impact.stats.map((item, key) => (
-            <li key={key}>
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            </li>
-          ))}
-          </ul>
-        </ImpactArea>
-      </Content>
-    </SectionDark>
-  </div>
-)
+      <Action>
+        <Heading>Take Action</Heading>
+        <ul>
+          {intro.blurbs.map((item, key) => {
+            return(
+              <li key={key}>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </li>
+            )
+          })
+          }
+        </ul>
+      </Action>
+
+      <SectionDark>
+        <Content>
+          <Heading className={`rel light center`}>
+            {impact.title}
+          </Heading>
+          <Headline className={`center`}>
+            {impact.description}
+          </Headline>
+          <ImpactArea>
+            <ul>
+            {impact.stats.map((item, key) => (
+              <li key={key}>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </li>
+            ))}
+            </ul>
+          </ImpactArea>
+        </Content>
+      </SectionDark>
+    </div>
+  )
+}
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
