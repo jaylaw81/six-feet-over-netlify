@@ -48,6 +48,7 @@ testimonials:
       questions and some phone tag, I can’t say enough how they helped lift some
       of the burden in such a horrible time.
     author: Bridgett, Wayne County MI
+    image: /img/bridgett-and-children.jpeg
   - quote: Six Feet Over helped me during the process of getting back on track after
       the loss of my husband. I didn’t know where to turn to or even what the
       next steps in life would be. I was scared and lost because of the
@@ -71,6 +72,7 @@ testimonials:
       Something that seemed impossible was made so much more easy and we will
       forever be grateful.
     author: Amanda, Redford MI
+    image: /img/amanda-with-lost-friend-robert.jpg
   - quote: Six feet over has been very helpful, kind and sincere in helping me deal
       with the death of my sister.  They offered to get counseling set up for
       the family. They kept in constant contact with me on the progress of the
@@ -80,6 +82,7 @@ testimonials:
       unexpected expense of a funeral. I am very grateful to have had the
       opportunity to be in touch with such a wonderful organization.
     author: Josette, Clare County MI
+    image: /img/josette-given.jpg
   - quote: During the hardest times of my life Six Feet Over stepped up and helped
       me and my four children get closure. I never will forget how happy my kids
       were when they got a chance to wear they mom around their neck . We are
@@ -90,6 +93,7 @@ testimonials:
       tell people about Six Feet Over daily  and I will continue to, even when I
       write my songs I speak about SFO
     author: Terry, Saginaw MI
+    image: /img/terry-harvey-kids.jpg
   - quote: The financial assistance helped me because I lost my job the day he died
       as well. I worked with him at our family business based on his sole
       services in mental health to others. It has taken me several months to get
@@ -100,6 +104,7 @@ testimonials:
       as well as I could not afford it. This assistance gave me some comfort in
       one less worry with paying for his cremations and I am forever grateful.
     author: Jenny, MI
+    image: /img/jenny-with-lost-husband-steve.jpg
 intro:
   blurbs:
     - title: Learn
