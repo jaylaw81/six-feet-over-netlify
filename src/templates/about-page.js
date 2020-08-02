@@ -9,6 +9,15 @@ import styled from 'styled-components'
 const Vision = styled.div`
   display: flex;
   position: relative;
+
+  p {
+    font-family: ${props => props.theme.fontHeading};
+    width: 800px;
+    margin: 80px auto;
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+  }
 `
 
 const Heading = styled.div`
@@ -19,7 +28,7 @@ const Heading = styled.div`
   font-size: 14px;
   color: #fff;
   left: 45%;
-  top: -51px;
+  top: -22px;
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 2px;
@@ -46,7 +55,7 @@ const Heading = styled.div`
 `
 
 
-export const AboutPageTemplate = ({ title, content, contentComponent, hero }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent, hero, vision }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -54,8 +63,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero }) =>
       <PageHeader image={hero.image} hero={hero} />
       <PageContent className="content" content={content} dark="dark" />
       <Vision>
-        <Heading>Take Action</Heading>
-
+        <Heading>Vision</Heading>
+        <p>{vision}</p>
       </Vision>
     </div>
   )
@@ -76,6 +85,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         hero={post.frontmatter.hero}
+        vision={post.frontmatter.vision}
         content={post.html}
       />
     </Layout>
@@ -101,6 +111,7 @@ export const aboutPageQuery = graphql`
             publicURL
           }
         }
+        vision
       }
     }
   }
