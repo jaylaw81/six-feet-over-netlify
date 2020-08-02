@@ -371,6 +371,7 @@ export const pageQuery = graphql`
         testimonials {
           quote
           author
+          image
         }
         description
         intro {
