@@ -8,7 +8,7 @@ mainpitch:
   title: Suicide is a public health crisis
   description: and Michigan families need our help
   cta: Read more about this cause.
-  url: /blog/
+  url: /about/
 action:
   title: Are you in need of assistance?
   description: Did you recently lose someone to suicide?
