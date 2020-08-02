@@ -10,6 +10,10 @@ hero:
     suicide, and those who love and care for someone with mental health
     struggles.
   image: /img/alexander-dummer-uh-xs-fiztk-unsplash.jpg
+vision: Six Feet Over envisions a world free of suicide loss – one where people
+  from diverse backgrounds have access to the resources and tools they need to
+  live peacefully and support their family and peers around issues of mental
+  health.
 ---
 We are passionate about our goals and our mission, and this is why we minimize overhead to just enough to sustain our daily operations. While we fundraise and accept donations for a variety of uses, all of which are dedicated to our mission, we allocate the vast majority of funds raised for direct financial assistance for survivors of suicide loss, helping defray and alleviate the unexpected cost burdens associated with their loss.
 
