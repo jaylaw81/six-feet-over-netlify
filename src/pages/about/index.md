@@ -14,6 +14,23 @@ vision: Six Feet Over envisions a world free of suicide loss – one where peopl
   from diverse backgrounds have access to the resources and tools they need to
   live peacefully and support their family and peers around issues of mental
   health.
+goals:
+  title: Goals
+  items:
+    - title: Educate
+      description: We educate, train, and equip individuals with helpful and relevant
+        resources, to encourage awareness, understanding, and conversation about
+        suicide.
+    - title: Cultivate
+      description: We cultivate a visible presence in the community through
+        collaboration with artists and local businesses, to make our work and
+        our passion better known.
+    - title: Distribute
+      description: We distribute our branded products and awareness materials, to both
+        further our visible presence and help fund our programming.
+    - title: Assist
+      description: We assist individuals with lived experience and their families to
+        ease the difficulty and pain of their grieving and healing processes.
 ---
 We are passionate about our goals and our mission, and this is why we minimize overhead to just enough to sustain our daily operations. While we fundraise and accept donations for a variety of uses, all of which are dedicated to our mission, we allocate the vast majority of funds raised for direct financial assistance for survivors of suicide loss, helping defray and alleviate the unexpected cost burdens associated with their loss.
 
