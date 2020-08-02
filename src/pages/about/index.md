@@ -1,7 +1,15 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About our values
+hero:
+  heading: Our Organization
+  intro: We are a non-profit organization servicing the great state of Michigan.
+    Our mission is to prevent suicide loss through education, advocacy, and
+    support, for survivors of suicide loss, individuals with lived experience of
+    suicide, and those who love and care for someone with mental health
+    struggles.
+  image: /img/alexander-dummer-uh-xs-fiztk-unsplash.jpg
 ---
 ### Our Vision
 Six Feet Over envisions a world free of suicide loss – one where people from diverse backgrounds have access to the resources and tools they need to live peacefully and support their family and peers around issues of mental health.
