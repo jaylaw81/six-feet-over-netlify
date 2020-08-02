@@ -33,7 +33,13 @@ const NavMenu = styled.ul`
 			margin-right: 100px;
 			text-decoration: none;
 			color: ${props => props.theme.basicBlue};
-			font-weight: 300;
+      font-weight: 300;
+
+      &.donate {
+        background-color: #C1F7D5;
+        border-radius: 20px;
+        padding: 10px 30px;
+      }
 		}
 	}
 `
@@ -116,7 +122,7 @@ const Navbar = class extends React.Component {
 								</Link>
 							</li>
 							<li>
-								<Link className="navbar-item" to="/donate">
+								<Link className="navbar-item donate" to="/donate">
 									Donate
 								</Link>
 							</li>

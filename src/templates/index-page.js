@@ -54,6 +54,10 @@ const HeroHeading = styled.h1`
 `
 const HeroSubHeading = styled.p`
   margin: 0 53px 0 64px;
+  a {
+    display: block;
+    margin-top: 10px;
+  }
 `
 
 const HeroTitle = styled.div`
