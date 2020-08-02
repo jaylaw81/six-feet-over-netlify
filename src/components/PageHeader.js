@@ -57,10 +57,10 @@ const HeroTagLine = styled.div`
 
 const PageHeader = (props) => {
 
-  const { image, hero } = props
+  const { hero } = props
   console.log(hero)
   const style = {
-    backgroundImage: `url(${image.publicURL})`
+    backgroundImage: `url(${hero.image.publicURL})`
   }
   return (
     <Hero style={style}>

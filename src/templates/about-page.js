@@ -60,7 +60,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
 
   return (
     <div>
-      <PageHeader image={hero.image} hero={hero} />
+      <PageHeader hero={hero} />
       <PageContent className="content" content={content} dark="dark" />
       <Vision>
         <Heading>Vision</Heading>
@@ -104,6 +104,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        vision
         hero {
           heading
           intro
@@ -111,7 +112,7 @@ export const aboutPageQuery = graphql`
             publicURL
           }
         }
-        vision
+
       }
     }
   }
