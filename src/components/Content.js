@@ -1,12 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-export const HTMLContent = ({ content, className }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
+const Section = styled.div`
+
+
+  .content {
+    margin: 0 auto;
+    width: 1200px;
+  }
+
+  &.dark {
+    background-color: #3c4557;
+    padding: 86px 0;
+    position: relative;
+    color: white;
+
+    &.impact {
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('/img/impact-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        z-Index: 1;
+        opacity: 0.1;
+      }
+
+    }
+
+  }
+`
+
+export const HTMLContent = ({ content, className, dark }) => (
+  <Section className={`${dark}`}>
+  <div className={`${className}`} dangerouslySetInnerHTML={{ __html: content }} />
+  </Section>
 )
 
-const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
+const Content = ({ content, className, dark }) => (
+  <Section className={`${dark}`}>
+    <div className={className}>{content}</div>
+  </Section>
 )
 
 Content.propTypes = {

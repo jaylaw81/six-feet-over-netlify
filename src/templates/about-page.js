@@ -1,27 +1,63 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import styled from 'styled-components'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+const Vision = styled.div`
+  display: flex;
+  position: relative;
+`
+
+const Heading = styled.div`
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #3c4557;
+  font-family: ${props => props.theme.fontBase};
+  font-size: 14px;
+  color: #fff;
+  left: 45%;
+  top: -51px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+
+  &.rel {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    display: inline-block;
+
+
+    &.light {
+      background-color: white;
+      color: #3c4557;
+    }
+  }
+
+  &.center {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+`
+
+
+export const AboutPageTemplate = ({ title, content, contentComponent, hero }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div>
+      <PageHeader image={hero.image} hero={hero} />
+      <PageContent className="content" content={content} dark="dark" />
+      <Vision>
+        <Heading>Take Action</Heading>
+
+      </Vision>
+    </div>
   )
 }
 
@@ -39,6 +75,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        hero={post.frontmatter.hero}
         content={post.html}
       />
     </Layout>
@@ -57,6 +94,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        hero {
+          heading
+          intro
+          image {
+            publicURL
+          }
+        }
       }
     }
   }

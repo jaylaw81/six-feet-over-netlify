@@ -127,6 +127,7 @@ const SectionDark = styled.div`
   background-color: #3c4557;
   padding: 86px 0;
   position: relative;
+
   &.impact {
     &:before {
       content: '';
