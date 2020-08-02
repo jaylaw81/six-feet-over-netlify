@@ -140,7 +140,7 @@ const Testimonials = ({ testimonials }) => {
   const [activePanel, setPanel] = useState(0)
 
   return (
-    <TestimonialsContainer>
+    <TestimonialsContainer data-sal="slide-right" data-sal-duration="800" data-sal-easing="easeInOutCubic">
     <DotContainer>
       {testimonials.map((item, key) => {
         const active = activePanel === key ? 'active' : 'inactive'

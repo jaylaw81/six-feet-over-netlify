@@ -246,7 +246,7 @@ export const IndexPageTemplate = ({
       </HeroContainer>
 
       <SectionDark>
-        <Content>
+        <Content data-sal="slide-up" data-sal-duration="800" data-sal-easing="easeInOutCubic">
           <Heading className={`rel light`}>
             {action.title}
           </Heading>
@@ -287,7 +287,7 @@ export const IndexPageTemplate = ({
             {impact.stats.map((item, key) => (
               <li key={key}>
                 <div>
-                  <h3>{item.title}</h3>
+                  <h3 data-sal="fade" data-sal-duration="200" data-sal-easing="easeInOutCubic" data-sal-delay={300 * key}>{item.title}</h3>
                   <p>{item.description}</p>
                 </div>
               </li>
