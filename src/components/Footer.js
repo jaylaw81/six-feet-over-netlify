@@ -18,8 +18,8 @@ const Section = styled.div`
 
   h4 {
     font-family: ${props => props.theme.fontBase};
-    font-size: 14px;
-    margin: 0;
+    font-size: 18px;
+    margin: 0 0 15px 0;
     line-height: 18px;
     text-transform: uppercase;
     color: #354463;
@@ -46,7 +46,7 @@ const Section = styled.div`
       list-style: none;
 
       a {
-        font-size: 14px;
+        font-size: 18px;
         font-family: ${props => props.theme.fontBase};
         font-weight: 100;
         text-decoration: none;

@@ -6,6 +6,7 @@ import '../../static/scss/main.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 import { ThemeProvider } from "styled-components"
+import StickyFooter from './StickyFooter';
 
 const theme = require("sass-extract-loader?{\"plugins\": [\"sass-extract-js\"]}!../../static/scss/_variables.scss")
 
@@ -54,7 +55,9 @@ const TemplateWrapper = ({ children }) => {
 			<ThemeProvider theme={theme}>
 				<Navbar />
 				<div>{children}</div>
+        <StickyFooter />
 				<Footer />
+
 			</ThemeProvider>
     </>
   )

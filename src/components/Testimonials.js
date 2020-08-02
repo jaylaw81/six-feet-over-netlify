@@ -9,7 +9,7 @@ const TestimonialsContainer = styled.div`
   margin: 80px auto;
   position: relative;
   width: 1200px;
-
+  min-height: 867px;
 `
 
 const ArticleContainer = styled.div`
@@ -105,6 +105,35 @@ const Dot = styled.a`
 
 `
 
+const Heading = styled.div`
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #3c4557;
+  font-family: ${props => props.theme.fontBase};
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: absolute;
+  left: 319px;
+  top: 30px;
+  z-index: 10;
+  border: 1px solid #3c4557;
+  &.light {
+      background-color: white;
+      color: #3c4557;
+    }
+
+
+  &.center {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    margin: 0 auto;
+  }
+`
+
 
 const Testimonials = ({ testimonials }) => {
 
@@ -131,6 +160,9 @@ const Testimonials = ({ testimonials }) => {
         const firstItem = key === activePanel ? 'active' : 'inactive'
         return (
           <ArticleContainer key={key} className={`message ${firstItem}`}>
+          <Heading className={`rel light`}>
+            Stories
+          </Heading>
             <article>
               <div className="message-body">
                 &#8220;{testimonial.quote}&#8221;
@@ -138,13 +170,15 @@ const Testimonials = ({ testimonials }) => {
                 <cite>{testimonial.author}</cite>
               </div>
             </article>
-            {testimonial.image &&
+
               <TestimonialImage>
                 <div>
+                {testimonial.image &&
                   <img src={testimonial.image.publicURL} />
+                }
                 </div>
               </TestimonialImage>
-            }
+
           </ArticleContainer>
         )
         }
