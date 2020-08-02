@@ -141,7 +141,7 @@ const Testimonials = ({ testimonials }) => {
             {testimonial.image &&
               <TestimonialImage>
                 <div>
-                  <img src={testimonial.image} />
+                  <img src={testimonial.image.publicURL} />
                 </div>
               </TestimonialImage>
             }

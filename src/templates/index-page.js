@@ -8,9 +8,7 @@ import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 
 import styled from 'styled-components'
-import Index from '../pages/contact/index';
 import Testimonials from '../components/Testimonials';
-import { StaticQueryContext } from 'gatsby';
 
 const toHTML = value => remark()
                             .use(remarkHTML)
@@ -371,7 +369,9 @@ export const pageQuery = graphql`
         testimonials {
           quote
           author
-          image
+          image {
+            publicURL
+          }
         }
         description
         intro {
