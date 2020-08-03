@@ -41,8 +41,6 @@ founders: >-
   the non-mainstream communities of music, art and youth demographics.
 
 
-
-
   After surviving 8 losses by suicide, beginning with the loss of her mother in 2003, Katie found that support groups and functions catered too much to the norms of society, avoiding and minimizing the needs of authenticity and honesty in the grieving process. She saw a profound need within her community for information, conversation, and postvention after loss.
 
 
