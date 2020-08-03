@@ -371,14 +371,11 @@ export const pageQuery = graphql`
             publicURL
           }
         }
-        description
         intro {
           blurbs {
             title
             description
           }
-          heading
-          description
         }
       }
     }
