@@ -106,7 +106,7 @@ const Navbar = class extends React.Component {
                 	About
               	</Link>
 							</li>
-              <li>
+              {/* <li>
 								<Link className="navbar-item" to="/get-involved">
 									Get Involved
 								</Link>
@@ -120,11 +120,12 @@ const Navbar = class extends React.Component {
 								<Link className="navbar-item" to="/blog">
 									Latest News
 								</Link>
-							</li>
+							</li> */}
 							<li>
-								<Link className="navbar-item donate" to="/donate">
+								<a className="navbar-item donate" href="https://secure.givelively.org/donate/six-feet-over
+" target="_blank" rel="noopener noreferrer">
 									Donate
-								</Link>
+								</a>
 							</li>
             </NavMenu>
           </NavMenuContainer>

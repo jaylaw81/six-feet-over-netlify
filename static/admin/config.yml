@@ -72,6 +72,17 @@ collections:
           - {label: "Vision", name: "vision", widget: "markdown"}
           - {label: "Goals", name: goals, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Items, name: items, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
           - {label: "Founders", name: founders, widget: "markdown"}
+      - file: "src/pages/help/index.md"
+        label: "Help Center"
+        name: "help"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "help-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Vision", name: "vision", widget: "markdown"}
+          - {label: "Goals", name: goals, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Items, name: items, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
+          - {label: "Founders", name: founders, widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"

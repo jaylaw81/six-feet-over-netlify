@@ -85,7 +85,7 @@ const Footer = class extends React.Component {
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link className="navbar-item" to="/get-involved">
               Get Involved
             </Link>
@@ -99,11 +99,12 @@ const Footer = class extends React.Component {
             <Link className="navbar-item" to="/blog">
               Latest News
             </Link>
-          </li>
+          </li> */}
           <li>
-            <Link className="navbar-item" to="/donate">
-              Donate
-            </Link>
+            <a className="navbar-item donate" href="https://secure.givelively.org/donate/six-feet-over
+" target="_blank" rel="noopener noreferrer">
+									Donate
+								</a>
           </li>
           </ul>
         </Section>

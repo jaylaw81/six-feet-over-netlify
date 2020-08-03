@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: 'help-page'
 path: /help
 title: Help
 ---
