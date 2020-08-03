@@ -45,6 +45,12 @@ CMS.registerPreviewTemplate('index', props => (
 		<IndexPagePreview {...props} />
 	</CSSInjector>
 ))
-CMS.registerPreviewTemplate('about', AboutPagePreview)
+
+CMS.registerPreviewTemplate('about', props => (
+	<CSSInjector>
+		<AboutPagePreview {...props} />
+	</CSSInjector>
+))
+
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)

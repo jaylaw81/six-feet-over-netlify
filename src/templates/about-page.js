@@ -5,10 +5,19 @@ import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import styled from 'styled-components'
+import remark from 'remark'
+import remarkHTML from 'remark-html'
+
+const toHTML = value => remark()
+                            .use(remarkHTML)
+                            .processSync(value)
+                            .toString()
 
 const Vision = styled.div`
   display: flex;
   position: relative;
+
+
 
   p {
     font-family: ${props => props.theme.fontHeading};
@@ -17,6 +26,21 @@ const Vision = styled.div`
     font-size: 40px;
     text-align: center;
     line-height: 48px;
+  }
+
+  &.base-font {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    .heading {
+      top: -69px;
+    }
+    p {
+      font-family: ${props => props.theme.fontBase};
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0 0 20px 0;
+    }
   }
 `
 
@@ -54,9 +78,71 @@ const Heading = styled.div`
   }
 `
 
+const SectionDark = styled.div`
+  background-color: #3c4557;
+  padding: 86px 0;
+  position: relative;
 
-export const AboutPageTemplate = ({ title, content, contentComponent, hero, vision }) => {
+  &.impact {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url('/img/impact-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      z-Index: 1;
+      opacity: 0.1;
+    }
+
+  }
+`
+
+const Headline = styled.h3`
+  font-family: ${props => props.theme.fontHeading};
+  color: white;
+  font-size: 44px;
+  line-height: 56px;
+
+  &.center {
+    margin: 50px auto 0 auto;
+    width: max-content;
+  }
+`
+
+const ContentContainer = styled.div`
+  width: 1024px;
+  margin: 0 auto;
+
+  .goals {
+    margin: 30px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      list-style: none;
+      margin-right: 15px;
+      color: white;
+      h3 {
+        color: white;
+        margin-bottom: 5px;
+      }
+      p {
+        color: white;
+        margin-top: 0;
+        line-height: 26px;
+      }
+    }
+  }
+`
+
+export const AboutPageTemplate = ({ title, content, contentComponent, hero, vision, goals, founders }) => {
   const PageContent = contentComponent || Content
+  const foundersContent = toHTML(founders)
 
   return (
     <div>
@@ -65,6 +151,26 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
       <Vision>
         <Heading>Vision</Heading>
         <p>{vision}</p>
+      </Vision>
+      <SectionDark>
+        <ContentContainer>
+          <Heading className={`rel light`}>
+            {goals.title}
+          </Heading>
+
+          <ul className="goals">
+            {goals.items.map((item, index) => (
+              <li key={index}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </li>
+            ))}
+          </ul>
+        </ContentContainer>
+      </SectionDark>
+      <Vision className="base-font">
+        <Heading className="heading">Founders Story</Heading>
+        <div dangerouslySetInnerHTML={{__html: foundersContent }} />
       </Vision>
     </div>
   )
@@ -87,6 +193,8 @@ const AboutPage = ({ data }) => {
         hero={post.frontmatter.hero}
         vision={post.frontmatter.vision}
         content={post.html}
+        goals={post.frontmatter.goals}
+        founders={post.frontmatter.founders}
       />
     </Layout>
   )
@@ -112,7 +220,14 @@ export const aboutPageQuery = graphql`
             publicURL
           }
         }
-
+        goals {
+          title
+          items {
+            title
+            description
+          }
+        }
+        founders
       }
     }
   }
