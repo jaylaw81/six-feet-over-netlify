@@ -4,12 +4,32 @@ module.exports = {
 			"MarkdownRemark.fields.posts": "MarkdownRemark",
 	},
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Six Feet Over',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Check out information and resources in the Help Center from Six Feet Over, a Detroit-based suicide prevention and postvention nonprofit.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-96904622-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+        // Any additional optional fields
+      },
+    },
     'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-scroll-reveal`,

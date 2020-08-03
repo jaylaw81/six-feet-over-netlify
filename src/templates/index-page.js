@@ -210,16 +210,10 @@ const Families = styled.div`
 `
 
 export const IndexPageTemplate = ({
-  image,
-  title,
-  featured,
-  heading,
-  subheading,
   mainpitch,
   action,
   impact,
   testimonials,
-  description,
   intro,
 }) => {
 
@@ -312,7 +306,6 @@ IndexPageTemplate.propTypes = {
   impact: PropTypes.shape({
     stats: PropTypes.array,
   }),
-  testimonals: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,

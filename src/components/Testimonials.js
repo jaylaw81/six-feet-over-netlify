@@ -146,6 +146,7 @@ const Testimonials = ({ testimonials }) => {
         const active = activePanel === key ? 'active' : 'inactive'
         return (
             <Dot
+              key={key}
               role="presentation"
               className={`${active}`}
               onClick={(e) => {

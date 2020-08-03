@@ -51,6 +51,19 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138973260-1" />
+
+          <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-96904622-1');
+            `}
+          </script>
+
+
       </Helmet>
 			<ThemeProvider theme={theme}>
 				<Navbar />
