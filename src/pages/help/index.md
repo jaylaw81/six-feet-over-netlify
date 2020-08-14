@@ -31,6 +31,6 @@ section:
       options.
 
 
-      [Click here](https://docs.google.com/forms/u/2/d/e/1FAIpQLSdr_VsPCi-I_0CnsqinUwi05W0yQ4X0O6yRacKpU7gQhGj1QQ/viewform)
+      [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdr_VsPCi-I_0CnsqinUwi05W0yQ4X0O6yRacKpU7gQhGj1QQ/viewform)
 ---
 Content
