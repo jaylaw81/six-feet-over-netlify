@@ -235,7 +235,11 @@ export const aboutPageQuery = graphql`
           heading
           intro
           image {
-            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
         goals {
@@ -248,7 +252,12 @@ export const aboutPageQuery = graphql`
         founders
         members {
           photo {
-            publicURL
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+
           }
           name
           title

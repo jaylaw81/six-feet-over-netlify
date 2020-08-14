@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Heading = styled.div`
   padding: 10px 20px;
@@ -65,6 +66,10 @@ const BioContainer = styled.div`
 
 const BioImage = styled.div`
 
+  .gatsby-image-wrapper {
+    width: 300px;
+  }
+
   img {
     width: 300px;
   }
@@ -88,7 +93,12 @@ const Bio = ({ bio, dir }) => {
     <BioContainer id={bio_name} className={`direction-${dir}`}>
 
       <BioImage className="bio-image">
-        <img src={bio.photo.publicURL} alt="" />
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: bio.photo,
+            alt: ``,
+          }}
+        />
       </BioImage>
 
       <BioContent className="bio-content">

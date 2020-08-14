@@ -1,14 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const Hero = styled.div`
   background-size: cover;
   justify-content: center;
   display: flex;
   padding-bottom: 50px;
+  height: max-content;
 
-  img {
+  .gatsby-image-wrapper {
+    width: 100%;
     position: absolute;
+  }
+
+  img, picture {
     top: 0;
     left: 0;
     width: 100%;
@@ -53,16 +59,21 @@ const HeroTagLine = styled.div`
   width: 401px;
   color: #fff;
   margin: 100px 100px 0 0;
+  z-index: 1;
 `
 
 const PageHeader = (props) => {
 
   const { hero } = props
-  const style = {
-    backgroundImage: `url(${hero.image.publicURL})`
-  }
+
   return (
-    <Hero style={style}>
+    <Hero className={`hero`}>
+      <PreviewCompatibleImage
+          imageInfo={{
+            image: hero.image,
+            alt: ``,
+          }}
+        />
       <HeroTagLine>
         #Help PREVENT SUICIDE
       </HeroTagLine>
