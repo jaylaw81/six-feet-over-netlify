@@ -4,6 +4,7 @@ import uploadcare from 'netlify-cms-media-library-uploadcare'
 import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { StyleSheetManager } from 'styled-components'
 import AboutPagePreview from './preview-templates/AboutPagePreview'
+import BasicPagePreview from './preview-templates/BasicPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
