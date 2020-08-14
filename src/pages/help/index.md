@@ -10,8 +10,8 @@ hero:
 section:
   - heading: Apply For Assistance
     content: >-
-      Do you need assistance paying for costs associated with the loss of your
-      loved one? 
+      ### Do you need assistance paying for costs associated with the loss of
+      your loved one? 
 
 
       We cover costs associated with:
