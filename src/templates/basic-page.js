@@ -50,9 +50,16 @@ const Section = styled.div`
     position: relative;
     padding: 20px 0;
 
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    text-align: center;
+
+    ul {
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+      font-style: italic;
+    }
 
     h3 {
       font-family: ${props => props.theme.fontHeadingBold};
