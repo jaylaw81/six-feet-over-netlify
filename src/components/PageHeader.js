@@ -58,7 +58,6 @@ const HeroTagLine = styled.div`
 const PageHeader = (props) => {
 
   const { hero } = props
-  console.log(hero)
   const style = {
     backgroundImage: `url(${hero.image.publicURL})`
   }

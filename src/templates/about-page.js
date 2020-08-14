@@ -4,9 +4,12 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Bio from '../components/Bio'
+
 import styled from 'styled-components'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
+
 
 const toHTML = value => remark()
                             .use(remarkHTML)
@@ -127,11 +130,15 @@ const ContentContainer = styled.div`
   }
 `
 
-export const AboutPageTemplate = ({ title, content, contentComponent, hero, vision, goals, founders }) => {
+const Bios = styled.div`
+  margin: 50px 0 50px 0;
+`
+
+export const AboutPageTemplate = (props) => {
+  const { title, content, contentComponent, hero, vision, goals, founders, members } = props
+
   const PageContent = contentComponent || Content
   const foundersContent = toHTML(founders)
-
-  console.log(goals.title)
 
   return (
     <div>
@@ -165,6 +172,24 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
         <Heading className="heading">Founders Story</Heading>
         <div dangerouslySetInnerHTML={{__html: foundersContent }} />
       </Vision>
+      <SectionDark>
+        <ContentContainer>
+          <Heading className={`rel light bio-heading`}>
+            Board Members
+          </Heading>
+
+          <Bios>
+            {members.map((member, key) => {
+              console.log(member)
+              const dir = key % 2 === 0 ? 1 : 0
+
+              return (
+                <Bio bio={member} key={key} dir={dir} />
+              )
+              })}
+          </Bios>
+        </ContentContainer>
+      </SectionDark>
     </div>
   )
 }
@@ -187,6 +212,7 @@ const AboutPage = ({ data }) => {
         content={post.html}
         goals={post.frontmatter.goals}
         founders={post.frontmatter.founders}
+        members={post.frontmatter.members}
       />
     </Layout>
   )
@@ -220,6 +246,14 @@ export const aboutPageQuery = graphql`
           }
         }
         founders
+        members {
+          photo {
+            publicURL
+          }
+          name
+          title
+          bio
+        }
       }
     }
   }
