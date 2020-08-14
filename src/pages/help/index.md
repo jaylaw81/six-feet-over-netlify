@@ -11,7 +11,10 @@ section:
   - heading: Apply For Assistance
     content: >-
       Do you need assistance paying for costs associated with the loss of your
-      loved one? We cover costs associated with:
+      loved one? 
+
+
+      We cover costs associated with:
 
 
       * funerals and memorial services
@@ -21,5 +24,13 @@ section:
       * cleaning services
 
       * various other services
+  - heading: Financial Aid
+    content: >-
+      Click below to apply for financial aid and our staff will follow up as
+      urgently as possible to learn more about your needs and discuss your
+      options.
+
+
+      [Click here](https://docs.google.com/forms/u/2/d/e/1FAIpQLSdr_VsPCi-I_0CnsqinUwi05W0yQ4X0O6yRacKpU7gQhGj1QQ/viewform)
 ---
 Content
