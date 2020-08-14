@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
 import styled from 'styled-components'
-import { aboutPageQuery } from '../templates/about-page';
 
 const TestimonialsContainer = styled.div`
 
@@ -175,7 +173,7 @@ const Testimonials = ({ testimonials }) => {
               <TestimonialImage>
                 <div>
                 {testimonial.image &&
-                  <img src={testimonial.image.publicURL} />
+                  <img alt="" src={testimonial.image.publicURL} />
                 }
                 </div>
               </TestimonialImage>
@@ -193,7 +191,6 @@ Testimonials.propTypes = {
     PropTypes.shape({
       quote: PropTypes.string,
       author: PropTypes.string,
-      image: PropTypes.string,
     })
   ),
 }

@@ -100,19 +100,6 @@ const SectionDark = styled.div`
 
   }
 `
-
-const Headline = styled.h3`
-  font-family: ${props => props.theme.fontHeading};
-  color: white;
-  font-size: 44px;
-  line-height: 56px;
-
-  &.center {
-    margin: 50px auto 0 auto;
-    width: max-content;
-  }
-`
-
 const ContentContainer = styled.div`
   width: 1024px;
   margin: 0 auto;
@@ -144,6 +131,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
   const PageContent = contentComponent || Content
   const foundersContent = toHTML(founders)
 
+  console.log(goals.title)
+
   return (
     <div>
       <PageHeader hero={hero} />
@@ -155,7 +144,11 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
       <SectionDark>
         <ContentContainer>
           <Heading className={`rel light`}>
-            {goals.title}
+            {goals.title &&
+              <>
+                {goals.title}
+              </>
+            }
           </Heading>
 
           <ul className="goals">
@@ -177,7 +170,6 @@ export const AboutPageTemplate = ({ title, content, contentComponent, hero, visi
 }
 
 AboutPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }

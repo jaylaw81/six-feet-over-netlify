@@ -43,7 +43,7 @@ const StickyContainer = styled.div`
 `
 
 
-const StickyFooter = ({}) => {
+const StickyFooter = () => {
 
   const [scrolled, setScrolled] = useState()
 

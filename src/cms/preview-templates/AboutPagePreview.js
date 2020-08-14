@@ -11,6 +11,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
       content={widgetFor('body')}
       hero={data.hero}
       vision={data.vision}
+      goals={data.goals}
     />
   )
 }

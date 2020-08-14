@@ -70,8 +70,9 @@ collections:
           - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Vision", name: "vision", widget: "markdown"}
-          - {label: "Goals", name: goals, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Items, name: items, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
+          - {label: "Goals", name: goals, widget: object, fields: [{label: Title, name: "title", widget: string}, {label: Items, name: items, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
           - {label: "Founders", name: founders, widget: "markdown"}
+          - {label: "Board Members", name: members, widget: list, fields: [{label: Photo, name: photo, widget: image}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Bio, name: bio, widget: markdown}]}
       - file: "src/pages/help/index.md"
         label: "Help Center"
         name: "help"
