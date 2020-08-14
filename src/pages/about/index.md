@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 path: /about
-title: About our values
+title: "About our values "
 hero:
   heading: Our Organization
   intro: We are a non-profit organization servicing the great state of Michigan.
