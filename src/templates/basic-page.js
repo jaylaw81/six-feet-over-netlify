@@ -50,6 +50,16 @@ const Section = styled.div`
     position: relative;
     padding: 20px 0;
 
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    h3 {
+      font-family: ${props => props.theme.fontHeadingBold};
+      font-size: 35px;
+      text-align: center;
+    }
+
   &.bg-light {
     background-color: white;
     color: #000;
@@ -58,6 +68,7 @@ const Section = styled.div`
   &.bg-dark {
     background-color: #3c4557;
     color: white;
+    text-align: center;
   }
 `
 
