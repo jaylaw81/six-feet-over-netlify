@@ -11,13 +11,18 @@ const Hero = styled.div`
 
   .gatsby-image-wrapper {
     width: 100%;
-    position: absolute;
+    position: absolute !important;
   }
 
-  img, picture {
+
+
+  picture {
     top: 0;
     left: 0;
     width: 100%;
+    img {
+      position: absolute
+    }
   }
 `
 
