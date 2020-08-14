@@ -16,10 +16,10 @@ section:
 
       * funerals and memorial services
 
-        remembrance items
+      * remembrance items
 
-        cleaning services
+      * cleaning services
 
-        various other services
+      * various other services
 ---
 Content
