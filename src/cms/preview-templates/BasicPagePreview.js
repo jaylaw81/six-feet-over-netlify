@@ -9,6 +9,7 @@ const BasicPagePreview = ({ entry, widgetFor }) => {
       title={entry.getIn(['data', 'title'])}
       content={widgetFor('body')}
       hero={data.hero}
+      section={data.section}
     />
   )
 }

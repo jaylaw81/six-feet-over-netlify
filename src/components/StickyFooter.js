@@ -18,9 +18,8 @@ const StickyContainer = styled.div`
   font-family: ${props => props.theme.fontBase};
   z-index: 30;
   box-shadow: 0 -5px 4px 0 rgba(0, 0, 0, 0.1);
-  opacity: 0;
   transition: all 0.2s ease;
-  bottom: -100px;
+  bottom: -180px;
 
   &.scrolled {
     bottom: 0;
