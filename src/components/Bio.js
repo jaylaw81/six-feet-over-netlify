@@ -61,6 +61,10 @@ const BioContainer = styled.div`
     }
   }
 
+  .gatsby-image-wrapper {
+    position: relative !important;
+  }
+
 `
 
 
