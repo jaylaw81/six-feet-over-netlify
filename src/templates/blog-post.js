@@ -5,6 +5,30 @@ import { Helmet } from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import PageHeader from '../components/PageHeader'
+import styled from 'styled-components'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+const PostContainer = styled.div`
+  width: 800px;
+  margin: 0px auto 80px auto;
+
+  h1 {
+    margin-top: 60px;
+  }
+
+  .taglist {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 20px 0 0px;
+      font-size: 14px;
+
+    }
+  }
+`
 
 export const BlogPostTemplate = ({
   content,
@@ -13,8 +37,10 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  coverImage
 }) => {
   const PostContent = contentComponent || Content
+  console.log(title)
 
   return (
     <section className="section">
@@ -22,7 +48,12 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+          {coverImage ? (
+            <PageHeader hero={coverImage} blogPost extraClass={`blog-post`} />
+          ) : null}
+
+            <PostContainer>
+            <h1 className="title">
               {title}
             </h1>
             <p>{description}</p>
@@ -37,8 +68,10 @@ export const BlogPostTemplate = ({
                     </li>
                   ))}
                 </ul>
+
               </div>
             ) : null}
+          </PostContainer>
           </div>
         </div>
       </div>
@@ -63,6 +96,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        coverImage={post.frontmatter.coverImage}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -97,6 +131,13 @@ export const pageQuery = graphql`
         title
         description
         tags
+        coverImage {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import Featured from '../components/Featured'
 
 const Hero = styled.div`
   background-size: cover;
@@ -9,12 +10,29 @@ const Hero = styled.div`
   padding-bottom: 50px;
   height: max-content;
 
-  .gatsby-image-wrapper {
-    width: 100%;
-    position: absolute !important;
+  &.is-featured {
+    justify-content: initial;
   }
 
+  &.blog-post {
+    overflow: hidden;
+    position: relative;
+    height: 300px;
 
+    .is-featured {
+      height: 800px;
+      overflow: hidden;
+      top: 0;
+    }
+
+    .hero-tagline {
+      margin: 65px auto;
+    }
+
+    .hero-box {
+      display: none;
+    }
+  }
 
   picture {
     top: 0;
@@ -35,6 +53,13 @@ const HeroBox = styled.div`
   width: 544px;
   z-index: 9999;
   height: 100%;
+
+  &.is-featured {
+    justify-content: center;
+    background-color: transparent;
+    width: initial;
+    margin: 0 auto;
+  }
 
   h1 {
     padding: 10px 20px;
@@ -69,22 +94,47 @@ const HeroTagLine = styled.div`
 
 const PageHeader = (props) => {
 
-  const { hero } = props
+  const { hero, featured, blogPost, extraClass } = props
+
+  const isFeatured = featured ? 'is-featured' : ''
 
   return (
-    <Hero className={`hero`}>
-      <PreviewCompatibleImage
+    <Hero className={`hero ${isFeatured} ${extraClass}`}>
+
+      {blogPost &&
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: hero,
+            alt: ``,
+          }}
+        />
+      }
+
+      {!blogPost &&
+        <PreviewCompatibleImage
           imageInfo={{
             image: hero.image,
             alt: ``,
           }}
         />
-      <HeroTagLine>
-        #Help PREVENT SUICIDE
-      </HeroTagLine>
-      <HeroBox>
-        <h1>{hero.heading}</h1>
-        <p>{hero.intro}</p>
+      }
+
+      {!featured &&
+        <HeroTagLine className={`hero-tagline`}>
+          #Help PREVENT SUICIDE
+        </HeroTagLine>
+      }
+
+      <HeroBox className={`${isFeatured} hero-box`}>
+        {!featured &&
+          <>
+            <h1>{hero.heading}</h1>
+            <p>{hero.intro}</p>
+          </>
+        }
+        {featured &&
+          <Featured />
+        }
       </HeroBox>
 
     </Hero>

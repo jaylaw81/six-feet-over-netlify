@@ -2,23 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 
-const PreviewCompatibleImage = ({ imageInfo }) => {
+import styled from 'styled-components'
+
+
+
+const PreviewCompatibleImage = ({ imageInfo, extraClass }) => {
   const { alt = '', childImageSharp, image } = imageInfo
 
   console.log(image)
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img fluid={image.childImageSharp.fluid} alt={alt} />
+        <Img className={`${extraClass}`} fluid={image.childImageSharp.fluid} alt={alt} />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img fluid={childImageSharp.fluid} alt={alt} />
+    return (
+      <Img className={`${extraClass}`} fluid={childImageSharp.fluid} alt={alt} />
+    )
   }
 
   if (!!image && typeof image === 'string')
-    return <img src={image} alt={alt} />
+    return (
+        <img className={`${extraClass}`} src={image} alt={alt} />
+    )
 
   return null
 }

@@ -97,7 +97,7 @@ export const BlogPageTemplate = (props) => {
 
   return (
     <div>
-      <PageHeader hero={hero} />
+      <PageHeader hero={hero} featured />
       {content &&
         <PageContent className="content" content={content} dark="dark" />
       }
@@ -109,7 +109,7 @@ export const BlogPageTemplate = (props) => {
               <Heading>
                 {item.heading}
               </Heading>
-              <div dangerouslySetInnerHTML={{__html: toHTML(item.content) }} />
+              <BlogRoll />
             </SectionContent>
           </Section>
         )

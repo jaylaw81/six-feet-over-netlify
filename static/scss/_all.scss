@@ -40,3 +40,12 @@ body {
     }
   }
 }
+
+.gatsby-image-wrapper {
+  width: 100%;
+  position: absolute !important;
+}
+
+.gatsby-image-wrapper.featured-image {
+  position: relative !important;
+}
