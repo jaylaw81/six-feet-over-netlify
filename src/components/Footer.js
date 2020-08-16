@@ -112,21 +112,11 @@ const Footer = class extends React.Component {
               Help Center
             </Link>
           </li>
-          {/* <li>
-            <Link className="navbar-item" to="/get-involved">
-              Get Involved
+          <li>
+            <Link className="navbar-item" to="/news">
+              News
             </Link>
           </li>
-          <li>
-            <Link className="navbar-item" to="/help">
-              Help Center
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-item" to="/blog">
-              Latest News
-            </Link>
-          </li> */}
           <li>
             <a className="navbar-item donate" href="https://secure.givelively.org/donate/six-feet-over
 " target="_blank" rel="noopener noreferrer">
