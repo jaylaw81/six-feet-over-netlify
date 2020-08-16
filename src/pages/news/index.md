@@ -8,3 +8,4 @@ section:
   - heading: All Entries
     content: Latest from Six Feet Over
 ---
+Blog Page
