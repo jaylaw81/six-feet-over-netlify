@@ -4,10 +4,16 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-
+import BlogRoll from '../components/BlogRoll'
 import styled from 'styled-components'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
+
+
+const toHTML = value => remark()
+                            .use(remarkHTML)
+                            .processSync(value)
+                            .toString()
 
 const Heading = styled.div`
   padding: 10px 20px;
@@ -22,73 +28,69 @@ const Heading = styled.div`
   font-weight: 300;
   letter-spacing: 2px;
 
-  &.rel {
-    position: relative;
-    top: inherit;
-    left: inherit;
-    display: inline-block;
+&.rel {
+  position: relative;
+  top: inherit;
+  left: inherit;
+  display: inline-block;
 
 
-    &.light {
-      background-color: white;
-      color: #3c4557;
-    }
+  &.light {
+    background-color: white;
+    color: #3c4557;
   }
+}
 
-  &.center {
-    display: flex;
-    justify-content: center;
-    width: max-content;
-    margin: 0 auto;
-  }
+&.center {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 0 auto;
+}
 `
 const Section = styled.div`
 
-    display: flex;
-    width: 100%;
-    height: max-content;
-    position: relative;
-    padding: 20px 0;
+  display: flex;
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding: 20px 0;
 
-    text-align: center;
+  text-align: center;
 
-    ul {
-      padding: 0;
-    }
-
-    ul li {
-      list-style: none;
-      font-style: italic;
-    }
-
-    h3 {
-      font-family: ${props => props.theme.fontHeadingBold};
-      font-size: 35px;
-      text-align: center;
-    }
-
-  &.bg-light {
-    background-color: white;
-    color: #000;
+  ul {
+    padding: 0;
   }
 
-  &.bg-dark {
-    background-color: #3c4557;
-    color: white;
+  ul li {
+    list-style: none;
+    font-style: italic;
+  }
+
+  h3 {
+    font-family: ${props => props.theme.fontHeadingBold};
+    font-size: 35px;
     text-align: center;
   }
+
+&.bg-light {
+  background-color: white;
+  color: #000;
+}
+
+&.bg-dark {
+  background-color: #3c4557;
+  color: white;
+  text-align: center;
+}
 `
 
 const SectionContent = styled.div`
   width: 800px;
   margin: 0 auto;
 `
-const toHTML = value => remark()
-                            .use(remarkHTML)
-                            .processSync(value)
-                            .toString()
 
-export const BasicPageTemplate = (props) => {
+export const BlogPageTemplate = (props) => {
   const { content, contentComponent, hero, section} = props
 
   const PageContent = contentComponent || Content
@@ -118,17 +120,17 @@ export const BasicPageTemplate = (props) => {
   )
 }
 
-BasicPageTemplate.propTypes = {
+BlogPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const BasicPage = ({ data }) => {
+const BlogPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <BasicPageTemplate
+      <BlogPageTemplate
         contentComponent={HTMLContent}
         hero={post.frontmatter.hero}
         content={post.html}
@@ -138,14 +140,14 @@ const BasicPage = ({ data }) => {
   )
 }
 
-BasicPage.propTypes = {
+BlogPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default BasicPage
+export default BlogPage
 
-export const BasictPageQuery = graphql`
-  query BasicPage($id: String!) {
+export const blogPageQuery = graphql`
+  query BlogPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {

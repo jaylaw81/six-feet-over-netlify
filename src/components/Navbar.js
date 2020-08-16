@@ -33,6 +33,30 @@ const NavMenu = styled.ul`
 			text-decoration: none;
 			color: ${props => props.theme.basicBlue};
       font-weight: 300;
+      transition: width 200ms ease-in-out;
+      position: relative;
+
+      &:after {
+        transition: width 800ms ease-in-out;
+        content: '';
+        width: 0;
+        height: 0px;
+        background-color: #354463;
+        position: absolute;
+        bottom: -10px;
+      }
+
+      &:hover {
+        &:after {
+          content: '';
+          height: 3px;
+          width: 100%;
+          background-color: #354463;
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+        }
+      }
 
       &.donate {
         background-color: #C1F7D5;
@@ -106,28 +130,21 @@ const Navbar = class extends React.Component {
                 <Link className="navbar-item" to="/">
                 	Home
               	</Link>
-								<Link className="navbar-item" to="/about">
+
+							</li>
+              <li>
+                <Link className="navbar-item" to="/about">
                 	About
               	</Link>
-							</li>
-              {/* <li>
-								<Link className="navbar-item" to="/get-involved">
-									Get Involved
-								</Link>
-							</li>
-							<li>
-								<Link className="navbar-item" to="/help">
-									Help Center
-								</Link>
-							</li>
-							<li>
-								<Link className="navbar-item" to="/blog">
-									Latest News
-								</Link>
-							</li> */}
+              </li>
               <li>
 								<Link className="navbar-item" to="/help">
 									Help Center
+								</Link>
+							</li>
+              <li>
+								<Link className="navbar-item" to="/news">
+									News
 								</Link>
 							</li>
 							<li>

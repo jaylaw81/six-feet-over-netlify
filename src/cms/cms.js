@@ -6,6 +6,7 @@ import { StyleSheetManager } from 'styled-components'
 import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BasicPagePreview from './preview-templates/BasicPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
+import BlogPagePreview from './preview-templates/BlogPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 CMS.registerMediaLibrary(uploadcare)
@@ -58,5 +59,14 @@ CMS.registerPreviewTemplate('help', props => (
 	</CSSInjector>
 ))
 
-// CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('news', props => (
+	<CSSInjector>
+		<BlogPagePreview {...props} />
+	</CSSInjector>
+))
+
+CMS.registerPreviewTemplate('blog', props => (
+	<CSSInjector>
+		<BlogPostPreview {...props} />
+	</CSSInjector>
+))

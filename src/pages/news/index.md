@@ -1,5 +1,7 @@
 ---
 title: Latest News
+path: /blog
+templateKey: blog-page
 hero:
   heading: Heading
   intro: Intro
