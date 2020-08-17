@@ -96,7 +96,7 @@ members:
       Carlos, and our unofficial mascot Bullet.
   - photo: /img/david-sfo.jpg
     name: David S. Parnell, Esq
-    title: Lawyer
+    title: "Board Member / Lawyer "
     bio: David acts as the counsel for Six Feet Over and advises us on all things
       legal. He concentrates his professional practice in deceptive business
       practices, debt collection harassment, class actions and representative
