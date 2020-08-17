@@ -10,6 +10,23 @@ const Hero = styled.div`
   padding-bottom: 50px;
   height: max-content;
 
+
+  &.hero .undefined  {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 76%;
+      background-color: #354463;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+  }
+
   &.is-featured {
     justify-content: initial;
   }

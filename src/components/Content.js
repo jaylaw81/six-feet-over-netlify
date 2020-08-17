@@ -8,6 +8,12 @@ const Section = styled.div`
   .content {
     margin: 0 auto;
     width: 1200px;
+
+    h1 {
+      font-family: ${props => props.theme.fontHeading};
+      line-height: 56px;
+      text-align: center;
+    }
   }
 
   &.dark {

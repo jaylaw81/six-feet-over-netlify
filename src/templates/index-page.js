@@ -76,6 +76,7 @@ const HeroTitle = styled.div`
 
 const Action = styled.div`
   position: relative;
+  margin: 34px 0;
 
   ul {
     display: flex;
@@ -198,6 +199,7 @@ const Headline = styled.h3`
   color: white;
   font-size: 44px;
   line-height: 56px;
+  margin-bottom: 0;
 
   &.center {
     margin: 50px auto 0 auto;
