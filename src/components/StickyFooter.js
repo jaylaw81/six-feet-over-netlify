@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import classNames from "classnames"
 
 const StickyContainer = styled.div`
-  position: sticky;
   bottom: 0;
   background-color: #354463;
   width: 100%;
@@ -20,11 +19,6 @@ const StickyContainer = styled.div`
   box-shadow: 0 -5px 4px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
   bottom: -180px;
-
-  &.scrolled {
-    bottom: 0;
-    opacity: 1;
-  }
 
   p {
     text-align: center;
@@ -49,20 +43,6 @@ const StickyFooter = () => {
   const classes = classNames("header", {
     scrolled: scrolled,
   })
-
-  useEffect(_ => {
-    const handleScroll = _ => {
-      if (window.pageYOffset > 800) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener("scroll", handleScroll)
-    return _ => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
 
   return (
     <StickyContainer className={`${classes}`}>
