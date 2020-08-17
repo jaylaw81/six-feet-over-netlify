@@ -17,13 +17,10 @@ goals:
       description: We assist individuals with lived experience and their families to
         ease the difficulty and pain of their grieving and healing processes.
 founders: >-
-  Katie Hardy is the Founder and CEO of Six Feet Over. Katie founded the
-  Detroit-based nonprofit in 2013 to serve the survivors of suicide loss in her
-  community, aiming to provide financial assistance for costs associated such as
-  funerals, clean up and memorials, as well as to provide outreach, awareness,
-  and resources to her community. Six Feet Over, and its program Suck It!
-  Suicide, are now focused on helping all survivors, with a special interest in
-  the non-mainstream communities of music, art and youth demographics.
+  ![](/img/img_5011.jpg)
+
+
+  Katie Hardy is the Founder and CEO of Six Feet Over. Katie founded the Detroit-based nonprofit in 2013 to serve the survivors of suicide loss in her community, aiming to provide financial assistance for costs associated such as funerals, clean up and memorials, as well as to provide outreach, awareness, and resources to her community. Six Feet Over, and its program Suck It! Suicide, are now focused on helping all survivors, with a special interest in the non-mainstream communities of music, art and youth demographics.
 
 
   After surviving 8 losses by suicide, beginning with the loss of her mother in 2003, Katie found that support groups and functions catered too much to the norms of society, avoiding and minimizing the needs of authenticity and honesty in the grieving process. She saw a profound need within her community for information, conversation, and postvention after loss.
