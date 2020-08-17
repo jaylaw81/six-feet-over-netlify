@@ -119,7 +119,7 @@ members:
       places and people.  Ian currently lives in Metro Detroit with his
       girlfriend Kaitlyn and their dogs, Raven and Bandit.
   - name: Dr. Leela Chandrasekar, MD
-    photo: /img/leela-sfo.jpg
+    photo: /img/2.jpg
     title: Board Member/Physician and Medical Advisor
     bio: >-
       Leela Chandrasekar is a recent graduate from Central Michigan University
