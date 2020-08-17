@@ -42,12 +42,17 @@ testimonials:
       of the burden in such a horrible time.
     author: Bridgett, Wayne County MI
     image: /img/bridgett-and-children.jpeg
-  - quote: Six feet Over was a blessing to us. They helped us get through the most
-      difficult, sad and stressful situation we have ever had to deal with.
-      Something that seemed impossible was made so much more easy and we will
-      forever be grateful.
-    author: Amanda, Redford MI
-    image: /img/amanda-with-lost-friend-robert.jpg
+  - quote: During the hardest times of my life Six Feet Over stepped up and helped
+      me and my four children get closure. I never will forget how happy my kids
+      were when they got a chance to wear they mom around their neck . We are
+      forever grateful thanks to Six Feet Over my kids can talk to they mom when
+      they start missing her. And that means a lot. The financial help was the
+      best thing I have ever experienced.  SFO helped me and children get my
+      wife / their mom ashes  and that brought closure to 5 broken hearts. I
+      tell people about Six Feet Over daily  and I will continue to, even when I
+      write my songs I speak about SFO
+    author: Terry, Saginaw MI
+    image: /img/terry-harvey-kids.jpg
   - quote: It's been almost two years since I got the worse phone call of my life. I
       didn't know how to process suicide, and I didn't have any support either.
       While looking on the internet for help I came across Six Feet Over – they
@@ -55,6 +60,12 @@ testimonials:
       supportive and helpful, and if it wasn't for them, I wouldn't have been
       able to give my Dad a proper farewell. For that I'm forever thankful.
     author: Christina, MI
+  - quote: Six feet Over was a blessing to us. They helped us get through the most
+      difficult, sad and stressful situation we have ever had to deal with.
+      Something that seemed impossible was made so much more easy and we will
+      forever be grateful.
+    author: Amanda, Redford MI
+    image: /img/amanda-with-lost-friend-robert.jpg
   - quote: Six Feet Over helped me during the process of getting back on track after
       the loss of my husband. I didn’t know where to turn to or even what the
       next steps in life would be. I was scared and lost because of the
@@ -83,17 +94,6 @@ testimonials:
       opportunity to be in touch with such a wonderful organization.
     author: Josette, Clare County MI
     image: /img/josette-given.jpg
-  - quote: During the hardest times of my life Six Feet Over stepped up and helped
-      me and my four children get closure. I never will forget how happy my kids
-      were when they got a chance to wear they mom around their neck . We are
-      forever grateful thanks to Six Feet Over my kids can talk to they mom when
-      they start missing her. And that means a lot. The financial help was the
-      best thing I have ever experienced.  SFO helped me and children get my
-      wife / their mom ashes  and that brought closure to 5 broken hearts. I
-      tell people about Six Feet Over daily  and I will continue to, even when I
-      write my songs I speak about SFO
-    author: Terry, Saginaw MI
-    image: /img/terry-harvey-kids.jpg
   - quote: The financial assistance helped me because I lost my job the day he died
       as well. I worked with him at our family business based on his sole
       services in mental health to others. It has taken me several months to get
