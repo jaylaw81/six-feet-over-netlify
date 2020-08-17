@@ -22,34 +22,34 @@ const TemplateWrapper = ({ children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix('/')}img/apple-touch-icon.png`}
+          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/favicon-32x32.png`}
+          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/favicon-16x16.png`}
+          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
-          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+          href={`${withPrefix('/')}img/SFO-Favicon-Black.svg`}
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
 
-        <meta property="og:type" content="business.business" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+          content={`${withPrefix('/')}img/sixftover-share.png`}
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138973260-1" />
 
