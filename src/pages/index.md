@@ -23,7 +23,7 @@ impact:
       description: years running
     - title: "32"
       description: families helped
-    - title: 2,600
+    - title: $2,600
       description: Avg. Family Assistance
     - title: "994"
       description: events & festivals
