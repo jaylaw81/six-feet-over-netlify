@@ -20,6 +20,9 @@ const Vision = styled.div`
   display: flex;
   position: relative;
 
+  img {
+    width: 300px;
+  }
 
 
   p {
