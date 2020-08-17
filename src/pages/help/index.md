@@ -26,7 +26,7 @@ section:
       * various other services
   - heading: Financial Aid
     content: >-
-      Click below to apply for financial aid and our staff will follow up as
+      ### Click below to apply for financial aid and our staff will follow up as
       urgently as possible to learn more about your needs and discuss your
       options.
 
