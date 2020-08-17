@@ -36,6 +36,18 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 testimonials:
+  - quote: My husband’s death was absolutely devastating. I did not have anything to
+      help cover expenses and SFO was referred to me and while there were many
+      questions and some phone tag, I can’t say enough how they helped lift some
+      of the burden in such a horrible time.
+    author: Bridgett, Wayne County MI
+    image: /img/bridgett-and-children.jpeg
+  - quote: Six feet Over was a blessing to us. They helped us get through the most
+      difficult, sad and stressful situation we have ever had to deal with.
+      Something that seemed impossible was made so much more easy and we will
+      forever be grateful.
+    author: Amanda, Redford MI
+    image: /img/amanda-with-lost-friend-robert.jpg
   - quote: It's been almost two years since I got the worse phone call of my life. I
       didn't know how to process suicide, and I didn't have any support either.
       While looking on the internet for help I came across Six Feet Over – they
@@ -43,12 +55,6 @@ testimonials:
       supportive and helpful, and if it wasn't for them, I wouldn't have been
       able to give my Dad a proper farewell. For that I'm forever thankful.
     author: Christina, MI
-  - quote: My husband’s death was absolutely devastating. I did not have anything to
-      help cover expenses and SFO was referred to me and while there were many
-      questions and some phone tag, I can’t say enough how they helped lift some
-      of the burden in such a horrible time.
-    author: Bridgett, Wayne County MI
-    image: /img/bridgett-and-children.jpeg
   - quote: Six Feet Over helped me during the process of getting back on track after
       the loss of my husband. I didn’t know where to turn to or even what the
       next steps in life would be. I was scared and lost because of the
@@ -67,12 +73,6 @@ testimonials:
       the help they gave me is immeasurable on all levels.  I am and will be
       forever grateful for the help they gave me.
     author: Denise, Livingston County MI
-  - quote: Six feet Over was a blessing to us. They helped us get through the most
-      difficult, sad and stressful situation we have ever had to deal with.
-      Something that seemed impossible was made so much more easy and we will
-      forever be grateful.
-    author: Amanda, Redford MI
-    image: /img/amanda-with-lost-friend-robert.jpg
   - quote: Six feet over has been very helpful, kind and sincere in helping me deal
       with the death of my sister.  They offered to get counseling set up for
       the family. They kept in constant contact with me on the progress of the
