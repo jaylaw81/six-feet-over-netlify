@@ -11,10 +11,10 @@ section:
   - heading: Apply For Assistance
     content: >-
       ### Do you need assistance paying for costs associated with the loss of
-      your loved one? 
+      your loved one?
 
 
-      We cover costs associated with:
+      We may be able to help with costs associated with:
 
 
       * funerals and memorial services
