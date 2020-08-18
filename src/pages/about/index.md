@@ -41,6 +41,25 @@ hero:
     suicide, and those who love and care for someone with mental health
     struggles.
   image: /img/alexander-dummer-uh-xs-fiztk-unsplash.jpg
+section:
+  - content: >-
+      Suck It! Suicide is the outreach program of Six Feet Over, which also does
+      the bulk of the fundraising for Six Feet Over through merchandise sales
+      and in person donations. Suck It! Suicide (SIS) specializes in community
+      outreach, doing so in unconventional ways and places. 
+
+
+      We have chosen to focus our outreach in places that generally aren't often at the top of other mental health and suicide prevention organizations lists to do so. SIS is often seen at community festivals, Pride events, concerts, local shows and sometimes just hanging out at a bar. Our founder, Kate Hardy, never felt comfortable in the mainstream...of anything really, so when she created this program she made it for communities that wouldn't seek the information on their own because of: stigma, comfort levels, knowing what to search, who to ask, shame, etc. 
+
+
+      Kate also felt that there needed to be something that was less "pastel and kittens hanging from a branch poster", and something people would identify with, find cool, and be comfortable approaching because it didn't appear or present as a conventional mental health and suicide prevention non profit. Over time, we have found that folks from all walks of lives identify with SIS and its culture, and we will love them all!
+
+
+      We see mental health and suicide prevention as something you CAN ask questions about, you CAN admit to dealing with, and you should be able to do so without judgment from others or fear of being labeled dangerous, 'crazy', unlovable, a burden, ignorant, or weird. SIS takes pride in supporting every person who needs it, no matter what they look like, what they believe, who they love, or how they identify. We also believe that laughter heals, and we make sure our outreach table is filled with laughs along with the hugs and occasional tears.
+
+
+      SIS is real people, giving real space, real time, real love and real knowledge to other very real people, while having a great time, selling merch and raising money to help people in need.
+    heading: Suck It! Suicide
 vision: Six Feet Over envisions a world free of suicide loss – one where people
   from diverse backgrounds have access to the resources and tools they need to
   live peacefully and support their family and peers around issues of mental
