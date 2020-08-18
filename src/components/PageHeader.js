@@ -7,7 +7,7 @@ const Hero = styled.div`
   background-size: cover;
   justify-content: center;
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 26px;
   height: max-content;
 
 

@@ -6,7 +6,7 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
   const data = entry.getIn(['data']).toJS()
   return (
     <AboutPageTemplate
-
+      section={data.section}
       title={entry.getIn(['data', 'title'])}
       content={widgetFor('body')}
       hero={data.hero}

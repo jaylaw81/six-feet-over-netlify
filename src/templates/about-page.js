@@ -19,10 +19,16 @@ const toHTML = value => remark()
 const Vision = styled.div`
   display: flex;
   position: relative;
+  background-color: #C1F7D5;
+
+  .heading-vision {
+    top: -22px;
+  }
 
   img {
     width: 300px;
   }
+
 
 
   p {
@@ -35,6 +41,7 @@ const Vision = styled.div`
   }
 
   &.base-font {
+    background-color: #fff;
     display: flex;
     justify-content: center;
     margin: 50px 0 50px 0;
@@ -137,8 +144,50 @@ const Bios = styled.div`
   margin: 50px 0 50px 0;
 `
 
+const Section = styled.div`
+
+    display: flex;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    padding: 20px 0;
+
+    text-align: center;
+
+    ul {
+      padding: 0;
+    }
+
+    ul li {
+      list-style: none;
+      font-style: italic;
+    }
+
+    h3 {
+      font-family: ${props => props.theme.fontHeadingBold};
+      font-size: 35px;
+      text-align: center;
+    }
+
+  &.bg-light {
+    background-color: white;
+    color: #000;
+  }
+
+  &.bg-dark {
+    background-color: #3c4557;
+    color: white;
+    text-align: center;
+  }
+`
+
+const SectionContent = styled.div`
+  width: 800px;
+  margin: 0 auto;
+`
+
 export const AboutPageTemplate = (props) => {
-  const { title, content, contentComponent, hero, vision, goals, founders, members } = props
+  const { title, content, contentComponent, hero, vision, goals, founders, members, section } = props
 
   const PageContent = contentComponent || Content
   const foundersContent = toHTML(founders)
@@ -147,8 +196,23 @@ export const AboutPageTemplate = (props) => {
     <div>
       <PageHeader hero={hero} />
       <PageContent className="content" content={content} dark="dark" />
+      {section && section.map((item, key) => {
+        const bkColor = key % 2 === 0 ? 'light' : 'dark'
+        return (
+          <Section className={`bg-${bkColor}`}>
+            <SectionContent>
+              <Heading>
+                {item.heading}
+              </Heading>
+              <div dangerouslySetInnerHTML={{__html: toHTML(item.content) }} />
+            </SectionContent>
+          </Section>
+        )
+      })
+
+      }
       <Vision>
-        <Heading>Vision</Heading>
+        <Heading className="heading-vision">Vision</Heading>
         <p>{vision}</p>
       </Vision>
       <SectionDark>
@@ -213,6 +277,7 @@ const AboutPage = ({ data }) => {
         hero={post.frontmatter.hero}
         vision={post.frontmatter.vision}
         content={post.html}
+        section={post.frontmatter.section}
         goals={post.frontmatter.goals}
         founders={post.frontmatter.founders}
         members={post.frontmatter.members}
@@ -234,6 +299,10 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         vision
+        section {
+          heading
+          content
+        }
         hero {
           heading
           intro
