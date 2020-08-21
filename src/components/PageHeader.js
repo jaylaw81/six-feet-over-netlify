@@ -9,23 +9,12 @@ const Hero = styled.div`
   display: flex;
   padding-bottom: 26px;
   height: max-content;
-
+  background-color: rgba(60, 69, 87, 0.4);
 
   &.hero .undefined  {
     position: relative;
     overflow: hidden;
-    &:before {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 76%;
-      background-color: #354463;
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      height: 100%;
-    }
+
 
   }
 
@@ -53,6 +42,10 @@ const Hero = styled.div`
     }
   }
 
+  .gatsby-image-wrapper {
+    z-index: -1;
+    height: max-content;
+  }
   picture {
     top: 0;
     left: 0;
