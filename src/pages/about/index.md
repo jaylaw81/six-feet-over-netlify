@@ -32,7 +32,7 @@ founders: >-
   Katie was recently nominated and voted in to serve on the Consumer/Survivor Subcommittee of the National Suicide Prevention Lifeline, and she has been featured in several articles and blogs including Hour Detroit, The Oakland Press, BLocal Detroit, and Hip In Detroit, as well as mentions in The Metro Times and discussions in the podcast A History of the Ridiculous.
 path: /about
 templateKey: about-page
-title: "About our values "
+title: About our values
 hero:
   heading: Our Organization
   intro: We are a non-profit organization servicing the great state of Michigan.
