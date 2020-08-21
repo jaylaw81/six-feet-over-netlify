@@ -10,9 +10,10 @@ const AboutPagePreview = ({ entry, widgetFor }) => {
       title={entry.getIn(['data', 'title'])}
       content={widgetFor('body')}
       hero={data.hero}
-      vision={data.vision}
+      visionSection={data.visionSection}
       goals={data.goals}
       members={data.members}
+      founders={data.founders}
     />
   )
 }

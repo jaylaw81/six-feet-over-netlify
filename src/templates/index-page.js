@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
-
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
-
 import styled from 'styled-components'
 import Testimonials from '../components/Testimonials';
 
@@ -129,27 +127,27 @@ const SectionDark = styled.div`
   padding: 86px 0;
   position: relative;
 
-  &.impact {
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      background-image: url('/img/impact-bg.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100%;
-      z-Index: 1;
-      opacity: 0.1;
-    }
-
+  .gatsby-image-wrapper {
+    z-index: -1;
   }
+
+  &.impact {
+    padding-top: 0;
+    background-color: rgba(60, 69, 87, 0.4);
+    overflow: hidden;
+
+    .rel {
+      top: -13px;
+    }
+  }
+
 `
 
 const Content = styled.div`
   width: 1024px;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 `
 
 const ImpactArea = styled.div`
@@ -272,6 +270,12 @@ export const IndexPageTemplate = ({
       </Action>
 
       <SectionDark className={`impact`}>
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: impact.image,
+            alt: ``,
+          }}
+        />
         <Content>
           <Heading className={`rel light center`}>
             {impact.title}
@@ -359,6 +363,13 @@ export const pageQuery = graphql`
           paragraph
         }
         impact {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           title
           description
           stats {

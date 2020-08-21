@@ -5,7 +5,7 @@ import PageHeader from '../components/PageHeader'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Bio from '../components/Bio'
-
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import styled from 'styled-components'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
@@ -38,6 +38,10 @@ const Vision = styled.div`
     font-size: 40px;
     text-align: center;
     line-height: 48px;
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    color: black;
   }
 
   &.base-font {
@@ -187,7 +191,7 @@ const SectionContent = styled.div`
 `
 
 export const AboutPageTemplate = (props) => {
-  const { title, content, contentComponent, hero, vision, goals, founders, members, section } = props
+  const { title, content, contentComponent, hero, visionSection, goals, founders, members, section } = props
 
   const PageContent = contentComponent || Content
   const foundersContent = toHTML(founders)
@@ -212,8 +216,14 @@ export const AboutPageTemplate = (props) => {
 
       }
       <Vision>
+        <PreviewCompatibleImage
+          imageInfo={{
+            image: visionSection.image,
+            alt: ``,
+          }}
+        />
         <Heading className="heading-vision">Vision</Heading>
-        <p>{vision}</p>
+        <p>{visionSection.copy}</p>
       </Vision>
       <SectionDark>
         <ContentContainer>
@@ -275,7 +285,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         hero={post.frontmatter.hero}
-        vision={post.frontmatter.vision}
+        visionSection={post.frontmatter.visionSection}
         content={post.html}
         section={post.frontmatter.section}
         goals={post.frontmatter.goals}
@@ -298,7 +308,16 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        vision
+        visionSection {
+          copy
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         section {
           heading
           content

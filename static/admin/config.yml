@@ -56,7 +56,7 @@ collections:
           - {label: Subheading, name: subheading, widget: string}
           - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: CTA, name: cta, widget: text}, {label: "CTA URL", name: url, widget: string}]}
           - {label: Action, name: action, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Paragraph, name: paragraph, widget: markdown}]}
-          - {label: Impact, name: impact, widget: object, fields: [{label: Title,name: title,widget: string},{label: Description,name: description, widget: text }, { label: Stats, name: stats, widget: list, fields: [ { label: Stat, name: title, widget: string }, { label: Description, name: description, widget: text } ] }]}
+          - {label: Impact, name: impact, widget: object, fields: [{label: Background Image, name: image, widget: image},{label: Title,name: title,widget: string},{label: Description,name: description, widget: text }, { label: Stats, name: stats, widget: list, fields: [ { label: Stat, name: title, widget: string }, { label: Description, name: description, widget: text } ] }]}
           - {label: Description, name: description, widget: string}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: text}, {label: Author, name: author, widget: string}, {label: Image, name: image, widget: image, required: false}]}
           - {label: Intro, name: intro, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: string}]}]}
@@ -70,7 +70,7 @@ collections:
           - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Section", name: "section", widget: "list", fields: [{label: Heading, name: heading, widget: string}, { label: Content, name: content, widget: markdown}]}
-          - {label: "Vision", name: "vision", widget: "markdown"}
+          - {label: "Vision Section", name: "visionSection", widget: object, fields: [{label: Background Image, name: image, widget: image}, {label: Copy, name: copy, widget: markdown}]}
           - {label: "Goals", name: goals, widget: object, fields: [{label: Title, name: "title", widget: string}, {label: Items, name: items, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}]}
           - {label: "Founders", name: founders, widget: "markdown"}
           - {label: "Board Members", name: members, widget: list, fields: [{label: Photo, name: photo, widget: image}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}, {label: Bio, name: bio, widget: markdown}]}

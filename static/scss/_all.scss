@@ -9,8 +9,9 @@ body {
 
 .frame-content {
   .hero {
+    .undefined,
     img {
-      position: absolute;
+      position: absolute !important;
     }
 
     img, picture {
