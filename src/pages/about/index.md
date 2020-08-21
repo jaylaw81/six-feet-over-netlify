@@ -64,6 +64,12 @@ vision: Six Feet Over envisions a world free of suicide loss – one where peopl
   from diverse backgrounds have access to the resources and tools they need to
   live peacefully and support their family and peers around issues of mental
   health.
+visionSection:
+  copy: Six Feet Over envisions a world free of suicide loss – one where people
+    from diverse backgrounds have access to the resources and tools they need to
+    live peacefully and support their family and peers around issues of mental
+    health.
+  image: /img/vision-clay-banks-ljqarjajotc-unsplash-1-.jpg
 members:
   - photo: /img/amelia-sfo.png
     name: Amelia Lehto
