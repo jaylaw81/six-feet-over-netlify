@@ -13,6 +13,7 @@ const Hero = styled.div`
 
   &.hero .undefined  {
     position: relative;
+    overflow: hidden;
     &:before {
       position: absolute;
       content: '';
@@ -23,6 +24,7 @@ const Hero = styled.div`
       top: 0;
       left: 0;
       z-index: 1;
+      height: 100%;
     }
 
   }
