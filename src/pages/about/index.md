@@ -32,7 +32,6 @@ founders: >-
   Katie was recently nominated and voted in to serve on the Consumer/Survivor Subcommittee of the National Suicide Prevention Lifeline, and she has been featured in several articles and blogs including Hour Detroit, The Oakland Press, BLocal Detroit, and Hip In Detroit, as well as mentions in The Metro Times and discussions in the podcast A History of the Ridiculous.
 path: /about
 templateKey: about-page
-title: About our values
 hero:
   heading: Our Organization
   intro: We are a non-profit organization servicing the great state of Michigan.
@@ -40,7 +39,7 @@ hero:
     support, for survivors of suicide loss, individuals with lived experience of
     suicide, and those who love and care for someone with mental health
     struggles.
-  image: /img/alexander-dummer-uh-xs-fiztk-unsplash.jpg
+  image: /img/alexander-dummer-uh-xs-fiztk-unsplash-1-.jpg
 section:
   - content: >-
       Suck It! Suicide is the outreach program of Six Feet Over, which also does
@@ -64,6 +63,7 @@ vision: Six Feet Over envisions a world free of suicide loss – one where peopl
   from diverse backgrounds have access to the resources and tools they need to
   live peacefully and support their family and peers around issues of mental
   health.
+title: About our values
 visionSection:
   copy: Six Feet Over envisions a world free of suicide loss – one where people
     from diverse backgrounds have access to the resources and tools they need to
