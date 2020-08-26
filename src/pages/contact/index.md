@@ -8,7 +8,7 @@ title: Contact
 path: /contact
 templateKey: basic-page
 hero:
-  image: /img/ilya-pavlov-wbxdgs_d17u-unsplash.jpg
+  image: /img/sixftover-share.png
   heading: Get In Touch
   intro: >
     Feel free to contact us using the Message Form for any non-urgent questions
