@@ -4,6 +4,12 @@ path: /help
 templateKey: basic-page
 seo:
   title: Help Center | Six Feet Over
+  description: Check out information and resources in the Help Center from Six
+    Feet Over, a Detroit-based suicide prevention and postvention nonprofit.
+  socialTitle: Help Center | Six Feet Over
+  socialDescription: Check out information and resources in the Help Center from
+    Six Feet Over, a Detroit-based suicide prevention and postvention nonprofit.
+  socialImage: /img/sixftover-share.png
 hero:
   heading: Have you recently lost someone to suicide
   intro: Experiencing the loss of a loved one to suicide can be a profoundly
