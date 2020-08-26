@@ -3,7 +3,7 @@ seo:
   title: Contact Us
   description: description
   socialTitle: title
-  socialDescription: description
+  socialDescription: "description "
 title: Contact
 path: /contact
 templateKey: basic-page
