@@ -1,5 +1,16 @@
 ---
 templateKey: index-page
+seo:
+  socialTitle: Six Feet Over | Suicide Prevention, Postvention, and Awareness
+    Across Michigan
+  description: Six Feet Over is a Detroit-based nonprofit working to spread
+    awareness about suicide prevention and provide financial assistance to
+    suicide loss survivors.
+  socialDescription: Six Feet Over is a Detroit-based nonprofit working to spread
+    awareness about suicide prevention and provide financial assistance to
+    suicide loss survivors.
+  socialImage: /img/sixftover-share.png
+  keywords: suicide prevention
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
