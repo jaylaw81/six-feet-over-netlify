@@ -4,9 +4,10 @@ seo:
   description: description
   socialTitle: title
   socialDescription: "description "
+  socialImage: /img/sixftover-share.png
 title: Contact
 path: /contact
-templateKey: basic-page
+templateKey: contact-page
 hero:
   image: /img/ilya-pavlov-wbxdgs_d17u-unsplash.jpg
   heading: Get In Touch

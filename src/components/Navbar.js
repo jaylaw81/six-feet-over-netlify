@@ -169,11 +169,11 @@ const Navbar = class extends React.Component {
 									News
 								</Link>
 							</li>
-              <li>
+              {/* <li>
 								<Link className="navbar-item" to="/contact">
 									Contact
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<a className="navbar-item donate" href="https://secure.givelively.org/donate/six-feet-over
 " target="_blank" rel="noopener noreferrer">
