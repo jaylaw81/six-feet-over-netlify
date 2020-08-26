@@ -32,6 +32,17 @@ founders: >-
   Katie was recently nominated and voted in to serve on the Consumer/Survivor Subcommittee of the National Suicide Prevention Lifeline, and she has been featured in several articles and blogs including Hour Detroit, The Oakland Press, BLocal Detroit, and Hip In Detroit, as well as mentions in The Metro Times and discussions in the podcast A History of the Ridiculous.
 path: /about
 templateKey: about-page
+seo:
+  title: About Us | Six Feet Over
+  socialTitle: About Us | Six Feet Over
+  description: Six Feet Over is a Detroit-based nonprofit working to spread
+    awareness about suicide prevention and provide financial assistance to
+    suicide loss survivors.
+  socialDescription: Six Feet Over is a Detroit-based nonprofit working to spread
+    awareness about suicide prevention and provide financial assistance to
+    suicide loss survivors.
+  keywords: suicide prevention
+  socialImage: /img/sixftover-share.png
 hero:
   heading: Our Organization
   intro: We are a non-profit organization servicing the great state of Michigan.
