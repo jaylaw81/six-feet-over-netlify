@@ -1,4 +1,9 @@
 ---
+seo:
+  title: Contact Us
+  description: description
+  socialTitle: title
+  socialDescription: description
 title: Contact
 hero:
   image: /img/ilya-pavlov-wbxdgs_d17u-unsplash.jpg
