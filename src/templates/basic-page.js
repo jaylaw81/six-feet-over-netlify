@@ -127,7 +127,7 @@ const BasicPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout seo={post.frontmatter.seo}>
       <BasicPageTemplate
         contentComponent={HTMLContent}
         hero={post.frontmatter.hero}
@@ -149,6 +149,16 @@ export const BasictPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        seo {
+          socialTitle
+          description
+          socialDescription
+          keywords
+          title
+          socialImage {
+            publicURL
+          }
+        }
         title
         hero {
           heading

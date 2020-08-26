@@ -44,17 +44,33 @@ const BioContainer = styled.div`
   margin: 80px auto;
   width: 800px;
 
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    width: initial;
+  }
+
+
+
   &.direction-1 {
     flex-direction: row;
 
     .bio-image {
       margin-right: 50px;
+      margin-left: 20px;
     }
 
   }
 
   &.direction-0 {
     flex-direction: row-reverse;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      flex-direction: row;
+
+      .bio-image {
+        margin-left: 20px;
+        margin-right: 50px;
+      }
+    }
 
     .bio-content {
       margin-right: 50px;
@@ -72,7 +88,13 @@ const BioImage = styled.div`
 
   .gatsby-image-wrapper {
     width: 300px;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      height: initial;
+    }
   }
+
+
 
   img {
     width: 300px;
@@ -85,6 +107,10 @@ const BioContent = styled.div`
     color: #fff;
     line-height: 32px;
     font-size: 20px;
+  }
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    width: 370px;
   }
 
 

@@ -21,6 +21,8 @@ const Vision = styled.div`
   position: relative;
   background-color: #C1F7D5;
 
+
+
   .heading-vision {
     top: -22px;
   }
@@ -29,7 +31,13 @@ const Vision = styled.div`
     width: 300px;
   }
 
-
+  .founders-content {
+    p {
+      @media only screen and (max-width: ${props => props.theme.tablet}) {
+        width: 600px;
+      }
+    }
+  }
 
   p {
     font-family: ${props => props.theme.fontHeading};
@@ -42,7 +50,12 @@ const Vision = styled.div`
     padding: 20px;
     background-color: white;
     color: black;
+
+
   }
+
+
+
 
   &.base-font {
     background-color: #fff;
@@ -74,12 +87,17 @@ const Heading = styled.div`
   font-weight: 300;
   letter-spacing: 2px;
 
+  &.bio-heading {
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      left: 20px !important;
+    }
+  }
+
   &.rel {
     position: relative;
     top: inherit;
     left: inherit;
     display: inline-block;
-
 
     &.light {
       background-color: white;
@@ -127,10 +145,20 @@ const ContentContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
 
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      flex-wrap: wrap;
+      width: 768px;
+      flex-direction: row;
+    }
+
     li {
       list-style: none;
       margin-right: 15px;
       color: white;
+
+      @media only screen and (max-width: ${props => props.theme.tablet}) {
+        width: 200px;
+      }
       h3 {
         color: white;
         margin-bottom: 5px;
@@ -146,6 +174,8 @@ const ContentContainer = styled.div`
 
 const Bios = styled.div`
   margin: 50px 0 50px 0;
+
+
 `
 
 const Section = styled.div`
@@ -247,7 +277,7 @@ export const AboutPageTemplate = (props) => {
       </SectionDark>
       <Vision className="base-font">
         <Heading className="heading">Founders Story</Heading>
-        <div dangerouslySetInnerHTML={{__html: foundersContent }} />
+        <div className={`founders-content`} dangerouslySetInnerHTML={{__html: foundersContent }} />
       </Vision>
       <SectionDark>
         <ContentContainer>
@@ -280,7 +310,7 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout seo={post.frontmatter.seo}>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
@@ -307,6 +337,16 @@ export const aboutPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        seo {
+          socialTitle
+          description
+          socialDescription
+          keywords
+          title
+          socialImage {
+            publicURL
+          }
+        }
         title
         visionSection {
           copy

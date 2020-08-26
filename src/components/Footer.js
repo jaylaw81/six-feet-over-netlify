@@ -12,9 +12,23 @@ const FooterContainer = styled.div`
   display: flex;
   padding: 20px 0;
   justify-content: space-around;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `
 
 const Section = styled.div`
+
+@media only screen and (max-width: ${props => props.theme.tablet}) {
+  margin: 10px 0;
+
+  &:first-of-type {
+    width: 768px;
+    justify-content: center;
+  }
+}
 
   h4 {
     font-family: ${props => props.theme.fontBase};
@@ -62,6 +76,10 @@ const Section = styled.div`
     font-size: 44px;
     line-height: 46px;
     text-align: right;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      display: none;
+    }
   }
 
 `

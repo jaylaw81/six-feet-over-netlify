@@ -15,6 +15,9 @@ const Hero = styled.div`
     position: relative;
     overflow: hidden;
 
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      flex-direction: column;
+    }
 
   }
 
@@ -99,9 +102,13 @@ const HeroTagLine = styled.div`
   font-family: ${props => props.theme.fontAccent};
   font-size: 72px;
   width: 401px;
-  color: #fff;
+  color: #ffffff;
   margin: 100px 100px 0 0;
   z-index: 1;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    display: none;
+  }
 `
 
 const PageHeader = (props) => {

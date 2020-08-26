@@ -8,6 +8,7 @@ import BasicPagePreview from './preview-templates/BasicPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import BlogPagePreview from './preview-templates/BlogPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
+import ContactPagePreview from './preview-templates/ContactPagePreview'
 
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
@@ -68,5 +69,11 @@ CMS.registerPreviewTemplate('news', props => (
 CMS.registerPreviewTemplate('blog', props => (
 	<CSSInjector>
 		<BlogPostPreview {...props} />
+	</CSSInjector>
+))
+
+CMS.registerPreviewTemplate('contact', props => (
+	<CSSInjector>
+		<ContactPagePreview {...props} />
 	</CSSInjector>
 ))

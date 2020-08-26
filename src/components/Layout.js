@@ -10,46 +10,52 @@ import StickyFooter from './StickyFooter';
 
 const theme = require("sass-extract-loader?{\"plugins\": [\"sass-extract-js\"]}!../../static/scss/_variables.scss")
 
-const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+const TemplateWrapper = ({ seo, children }) => {
+  //const { title, description } = useSiteMetadata()
+
+  const pageTitle = seo !== null ? seo.title : 'Six Feet Over'
+  const desc = seo !== null ? seo.description : 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
+  const socTitle = seo !== null ? seo.socialTitle : 'Six Feet Over'
+  const socDescription = seo !== null ?seo.socialDescription : 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
+  const socImage = seo !== null ? seo.socialImage.publicURL : ''
   return (
     <>
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{pageTitle}</title>
+        <meta name="description" content={desc} />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
+          href={`${withPrefix('')}${socImage.publicURL}`}
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
+          href={`${withPrefix('')}${socImage.publicURL}`}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/SFO-Favicon-Black.png`}
+          href={`${withPrefix('')}${socImage.publicURL}`}
           sizes="16x16"
         />
 
         <link
           rel="mask-icon"
-          href={`${withPrefix('/')}img/SFO-Favicon-Black.svg`}
+          href={`${withPrefix('')}${socImage.publicURL}`}
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/sixftover-share.png`}
+          content={`${withPrefix('')}}${socImage.publicURL}`}
         />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138973260-1" />
 

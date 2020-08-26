@@ -5,6 +5,8 @@ seo:
   socialTitle: title
   socialDescription: description
 title: Contact
+path: /contact
+templateKey: basic-page
 hero:
   image: /img/ilya-pavlov-wbxdgs_d17u-unsplash.jpg
   heading: Get In Touch

@@ -9,6 +9,10 @@ const Section = styled.div`
     margin: 0 auto;
     width: 1200px;
 
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      width: 768px;
+    }
+
     h1 {
       font-family: ${props => props.theme.fontHeading};
       line-height: 56px;

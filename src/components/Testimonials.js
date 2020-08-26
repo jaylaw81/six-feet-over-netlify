@@ -8,6 +8,10 @@ const TestimonialsContainer = styled.div`
   position: relative;
   width: 1200px;
   min-height: 867px;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    min-height: initial;
+  }
 `
 
 const ArticleContainer = styled.div`
@@ -15,11 +19,22 @@ const ArticleContainer = styled.div`
     display: none;
   }
 
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    display: flex;
+    width: 768px;
+    justify-content: center;
+    margin-top: 33px;
+  }
+
   article {
   background-color: #354463;
   color: white;
   width: 544px;
   top: 50px;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    width: 300px;
+  }
 
   z-index: 2;
   position: relative;
@@ -29,6 +44,10 @@ const ArticleContainer = styled.div`
     font-family: ${props => props.theme.fontHeadingBold};
     font-size: 25px;
     line-height: 40px;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      font-size: 14px;
+    }
     cite {
       font-family: ${props => props.theme.fontBase};
       font-style: normal;
@@ -51,6 +70,13 @@ const TestimonialImage = styled.div`
   display: flex;
   justify-content: flex-end;
 
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    position: relative;
+    width: 380px;
+    top: 50px;
+    height: initial;
+  }
+
   div {
     position: relative;
   }
@@ -66,6 +92,12 @@ const DotContainer = styled.div`
     justify-content: flex-start;
     z-index: 3;
     position: relative;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      position: relative;
+      width: 768px;
+      justify-content: center;
+    }
 `
 
 const Dot = styled.a`
@@ -118,6 +150,10 @@ const Heading = styled.div`
   top: 30px;
   z-index: 10;
   border: 1px solid #3c4557;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    top: 65px;
+  }
   &.light {
       background-color: white;
       color: #3c4557;

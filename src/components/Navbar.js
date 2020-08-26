@@ -11,6 +11,13 @@ const NavBar = styled.nav`
 	.container {
 		display: flex;
 		justify-content: space-around;
+
+    @media only screen and (max-width: ${props => props.theme.tablet}) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
 	}
 `
 
@@ -36,6 +43,10 @@ const NavMenu = styled.ul`
       transition: width 200ms ease-in-out;
       position: relative;
 
+      @media only screen and (max-width: ${props => props.theme.tablet}) {
+        margin-right: 20px;
+      }
+
       &:after {
         transition: width 800ms ease-in-out;
         content: '';
@@ -44,6 +55,11 @@ const NavMenu = styled.ul`
         background-color: #354463;
         position: absolute;
         bottom: -10px;
+
+        @media only screen and (max-width: ${props => props.theme.tablet}) {
+          height: initial;
+          position: initial;
+        }
       }
 
       &:hover {
@@ -62,6 +78,12 @@ const NavMenu = styled.ul`
         background-color: #C1F7D5;
         border-radius: 20px;
         padding: 10px 30px;
+
+        @media only screen and (max-width: ${props => props.theme.tablet}) {
+          position: absolute;
+          top: 10px;
+          right: 4px;
+        }
       }
 		}
 	}
@@ -145,6 +167,11 @@ const Navbar = class extends React.Component {
               <li>
 								<Link className="navbar-item" to="/news">
 									News
+								</Link>
+							</li>
+              <li>
+								<Link className="navbar-item" to="/contact">
+									Contact
 								</Link>
 							</li>
 							<li>

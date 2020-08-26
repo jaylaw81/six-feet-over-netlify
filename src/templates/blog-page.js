@@ -129,7 +129,7 @@ const BlogPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout seo={post.frontmatter.seo}>
       <BlogPageTemplate
         contentComponent={HTMLContent}
         hero={post.frontmatter.hero}
@@ -151,6 +151,16 @@ export const blogPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        seo {
+          socialTitle
+          description
+          socialDescription
+          keywords
+          title
+          socialImage {
+            publicURL
+          }
+        }
         title
         hero {
           heading

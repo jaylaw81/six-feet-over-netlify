@@ -27,6 +27,10 @@ const Hero = styled.div`
   margin: 125px auto 0 auto;
   display: flex;
   position: relative;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    flex-direction: column;
+  }
 `
 
 const HeroBox = styled.div`
@@ -41,6 +45,9 @@ const HeroTagLine = styled.div`
   font-size: 72px;
   width: 401px;
   color: #fff;
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    display: none;
+  }
 `
 
 const HeroHeading = styled.h1`
@@ -127,6 +134,11 @@ const SectionDark = styled.div`
   padding: 86px 0;
   position: relative;
 
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    padding: 86px 0;
+
+  }
+
   .gatsby-image-wrapper {
     z-index: -1;
   }
@@ -148,6 +160,10 @@ const Content = styled.div`
   margin: 0 auto;
   z-index: 1;
   position: relative;
+
+  @media only screen and (max-width: ${props => props.theme.tablet}) {
+    width: 656px;
+  }
 `
 
 const ImpactArea = styled.div`
@@ -321,7 +337,7 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
   return (
-    <Layout>
+    <Layout seo={frontmatter.seo}>
       <IndexPageTemplate
         title={frontmatter.title}
         featured={frontmatter.featured}
@@ -350,6 +366,16 @@ export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
+        seo {
+          socialTitle
+          description
+          socialDescription
+          keywords
+          title
+          socialImage {
+            publicURL
+          }
+        }
         title
         mainpitch {
           title

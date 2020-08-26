@@ -91,7 +91,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout seo={post.frontmatter.seo}>
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -127,6 +127,16 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        seo {
+          socialTitle
+          description
+          socialDescription
+          keywords
+          title
+          socialImage {
+            publicURL
+          }
+        }
         date(formatString: "MMMM DD, YYYY")
         title
         description

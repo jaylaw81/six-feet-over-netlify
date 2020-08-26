@@ -19,6 +19,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "relation", collection: "authors", searchFields: ["title", "firstName", "lastName"], valueField: "title"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -50,6 +51,7 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
@@ -66,6 +68,7 @@ collections:
         name: "about"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown"}
@@ -79,6 +82,17 @@ collections:
         name: "help"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "basic-page"}
+          - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
+          - {label: "Section", name: "section", widget: "list", fields: [{label: Heading, name: heading, widget: string}, { label: Content, name: content, widget: markdown}]}
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
+          - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text}, {label: "Hero Image", name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -88,6 +102,7 @@ collections:
         name: "news"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-page"}
+          - {label: "SEO", name: 'seo', widget: object, fields: [{label: "Page Title", name: "title", widget: string, required: false},{label: "Description", name: description, widget: string, required: false}, {label: 'Keywords', name: keywords, widget: text, required: false}, {label: "Social Title", name: "socialTitle", widget: string, required: false}, {label: "Social Description", name: "socialDescription", widget: text, required: false}, {label: "Social Image", name: "socialImage", widget: image, required: false}]}
           - {label: "Title", name: "title", widget: "string"}
           - {label: Hero, name: "hero", widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Intro, name: intro, widget: text, required: false}, {label: "Hero Image", name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown", required: false}
