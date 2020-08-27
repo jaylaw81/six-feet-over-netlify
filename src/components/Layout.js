@@ -13,11 +13,21 @@ const theme = require("sass-extract-loader?{\"plugins\": [\"sass-extract-js\"]}!
 const TemplateWrapper = ({ seo, children }) => {
   //const { title, description } = useSiteMetadata()
 
-  const pageTitle = (seo !== undefined && seo.title !== undefined) ? seo.title : 'Six Feet Over'
-  const desc = (seo !== undefined && seo.description !== undefined) ? seo.description : 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
-  const socTitle = (seo !== undefined && seo.socialTitle !== undefined) ? seo.socialTitle : 'Six Feet Over'
-  const socDescription = (seo !== undefined && seo.socialDescription !== undefined) ?seo.socialDescription : 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
-  const socImage = (seo !== undefined && seo.socialImage !== undefined) ? seo.socialImage.publicURL : ''
+
+  let pageTitle = 'Six Feet Over'
+  let desc = 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
+  let socTitle = 'Six Feet Over'
+  let socDescription = 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
+  let socImage = ''
+
+  if ( seo !== null && seo !== undefined) {
+    pageTitle = seo.title
+    desc = seo.description
+    socTitle = seo.socialTitle
+    socDescription = seo.socialDescription
+    socImage = seo.socialImage.publicURL
+  }
+
   return (
     <>
       <Helmet>
