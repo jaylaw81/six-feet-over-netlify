@@ -169,6 +169,11 @@ const Navbar = class extends React.Component {
 									News
 								</Link>
 							</li>
+              <li>
+								<a className="navbar-item" href="http://store.sixftover.org">
+									Store
+								</a>
+							</li>
               {/* <li>
 								<Link className="navbar-item" to="/contact">
 									Contact
