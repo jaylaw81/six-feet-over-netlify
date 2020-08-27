@@ -19,10 +19,12 @@ const TemplateWrapper = ({ seo, children }) => {
   let socTitle = 'Six Feet Over'
   let socDescription = 'Six Feet Over is a Detroit-based nonprofit working to spread awareness about suicide prevention and provide financial assistance to suicide loss survivors.'
   let socImage = ''
+  let keywords = ''
 
   if ( seo !== null && seo !== undefined) {
     pageTitle = seo.title
     desc = seo.description
+    keywords = seo.keywords
     socTitle = seo.socialTitle
     socDescription = seo.socialDescription
     socImage = seo.socialImage.publicURL
@@ -34,6 +36,7 @@ const TemplateWrapper = ({ seo, children }) => {
         <html lang="en" />
         <title>{pageTitle}</title>
         <meta name="description" content={desc} />
+        <meta name="keywords" content={keywords} />
 
         <link
           rel="apple-touch-icon"
