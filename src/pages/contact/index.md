@@ -3,7 +3,7 @@ seo:
   title: Contact Us
   description: description
   socialTitle: title
-  socialDescription: "description "
+  socialDescription: "description"
   socialImage: /img/sixftover-share.png
 title: Contact
 path: /contact
