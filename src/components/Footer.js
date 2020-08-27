@@ -136,6 +136,11 @@ const Footer = class extends React.Component {
             </Link>
           </li>
           <li>
+								<a target="_blank" rel="noopener noreferrer" className="navbar-item" href="http://store.sixftover.org">
+									Store
+								</a>
+							</li>
+          <li>
             <a className="navbar-item donate" href="https://secure.givelively.org/donate/six-feet-over
 " target="_blank" rel="noopener noreferrer">
 									Donate
