@@ -170,7 +170,7 @@ const Navbar = class extends React.Component {
 								</Link>
 							</li>
               <li>
-								<a className="navbar-item" href="http://store.sixftover.org">
+								<a target="_blank" rel="noopener noreferrer" className="navbar-item" href="http://store.sixftover.org">
 									Store
 								</a>
 							</li>
