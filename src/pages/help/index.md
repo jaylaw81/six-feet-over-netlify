@@ -3,7 +3,7 @@ title: Help Center
 path: /help
 templateKey: basic-page
 seo:
-  title: Help Center | Six Feet Over
+  title: "Help Center | Six Feet Over "
   description: Check out information and resources in the Help Center from Six
     Feet Over, a Detroit-based suicide prevention and postvention nonprofit.
   socialTitle: Help Center | Six Feet Over
