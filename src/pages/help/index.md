@@ -11,7 +11,7 @@ seo:
     Six Feet Over, a Detroit-based suicide prevention and postvention nonprofit.
   socialImage: /img/sixftover-share.png
 hero:
-  heading: Have you recently lost someone to suicide
+  heading: "Have you recently lost someone to suicide "
   intro: Experiencing the loss of a loved one to suicide can be a profoundly
     isolating and challenging life experience. We would like to help.
   image: /img/financial-application-kari-shea-qfax7_xjxm4-unsplash.jpg
