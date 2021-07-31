@@ -30,7 +30,7 @@ action:
     Application](https://docs.google.com/forms/d/14vzpeDxVVr954pUyUkt0ZVEp6aB3HIDsoPL7dbVQbSA/viewform?edit_requested=true).
 impact:
   title: Our Impact
-  description: "We invest in a better tomorrow for "
+  description: "We invest in a better tomorrow for  "
   stats:
     - title: "8 "
       description: years running
