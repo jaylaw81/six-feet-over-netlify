@@ -41,7 +41,7 @@ seo:
   socialDescription: Six Feet Over is a Detroit-based nonprofit working to spread
     awareness about suicide prevention and provide financial assistance to
     suicide loss survivors.
-  keywords: suicide prevention
+  keywords: suicide prevention test
   socialImage: /img/sixftover-share.png
 hero:
   heading: Our Organization
